@@ -1,0 +1,69 @@
+{
+  "candidate": "smol",
+  "rows": [
+    {
+      "engine": {
+        "id": "HuggingFaceTB/SmolLM2-360M-Instruct",
+        "revision": "a10cc1512eabd3dde888204e902eca88bddb4951"
+      },
+      "prompt": "Write a 200-word academic paragraph for nursing students explaining how to assess patient hydration status using physical signs and clinical judgement.",
+      "text": "Patients with respiratory distress syndrome (RDS) require close monitoring and appropriate management to prevent and treat complications. This includes assessing for signs of distress, such as tachypnea, tachycardia, and bradycardia, and assessing for signs of shock, such as decreased jugular venous pressure, decreased capillary refill, and altered mental status.\n\nIn addition to assessing these signs, clinicians should also consider the patient's clinical and physiological status, such as respiratory rate, blood gas analysis, and cardiac parameters. Blood gas analysis is a critical component of the assessment, as it evaluates the acid-base balance of the patient's blood and helps to determine the effectiveness of therapy.\n\nThe clinical and physiological status of the patient should also be considered, such as respiratory rate, blood pressure, and cardiac output. The clinician should also consider the patient's history, such as any pre-existing medical conditions, medications, and recent events that may have contributed to the development of RDS.\n\nThe clinician should also consider the patient's level of consciousness, such as their level of alertness, confusion, and agitation, as these can affect their response to therapy and their response to the patient's condition.\n\nIn the assessment, the clinician should also consider the patient's signs and symptoms, such as dyspnea, crackles, and frothy sputum, and assess for signs of dehydration, such as decreased thirst and dry mouth, and assess for signs of respiratory failure, such as decreased oxygen saturation and increased carbon dioxide levels.\n\nThe clinician should also consider the patient's medical history, such as any other medical conditions, medications, and recent events, and assess for signs of respiratory failure, such as increased carbon dioxide levels and decreased oxygen saturation, and assess for signs of fluid overload, such as increased capillary pressure and increased urine output.\n\nIn addition, the clinician should consider the patient's level of consciousness, such as their level of alertness, confusion, and agitation,",
+      "complete": false,
+      "generatedTokens": 400,
+      "durationSeconds": 81.602,
+      "sha256": "28aa118a7cb65093a61ac4524e3f1a66c52497b57ea6a62bdd33d015822fb563",
+      "quantization": "torch dynamic int8 linear layers; float32 embeddings",
+      "transformers": "5.14.1",
+      "torch": "2.9.1+cpu",
+      "topic": "nursing-education"
+    },
+    {
+      "engine": {
+        "id": "HuggingFaceTB/SmolLM2-360M-Instruct",
+        "revision": "a10cc1512eabd3dde888204e902eca88bddb4951"
+      },
+      "prompt": "Write a 180-word formal summary of the trade-offs between centralized and decentralized health-care administration, aimed at a public-health audience.",
+      "text": "Healthcare is a critical public health issue with both central and decentralized health systems. This summary will provide a brief overview of the trade-offs between central and decentralized health care, and the public's health audience, and the potential benefits and challenges for each type of health care system.",
+      "complete": true,
+      "generatedTokens": 57,
+      "durationSeconds": 8.737,
+      "sha256": "3493d9ea36622c1b47b8ace1c4ab05ba851f8b03950acf13dda57529c9b5a717",
+      "quantization": "torch dynamic int8 linear layers; float32 embeddings",
+      "transformers": "5.14.1",
+      "torch": "2.9.1+cpu",
+      "topic": "health-policy"
+    },
+    {
+      "engine": {
+        "id": "HuggingFaceTB/SmolLM2-360M-Instruct",
+        "revision": "a10cc1512eabd3dde888204e902eca88bddb4951"
+      },
+      "prompt": "Write a 220-word academic methods paragraph describing how a hospital could design a retrospective chart-review study on readmission rates.",
+      "text": "In a hospital, a retrospective study on readmission rates could be designed to analyze the relationship between readmission rates and other variables such as patient demographics, disease severity, and treatment outcomes. The study could include data from a sample of patients, including a control group that did not experience readmission, to determine if the readmission rates differ between these groups. The study could also include a statistical analysis to identify any patterns or trends in readmission rates, such as whether certain patient subgroups are more prone to readmission. Additionally, the study could investigate the impact of various factors, such as hospital policies, staff training, and medical interventions, on readmission rates. The data could be analyzed using statistical techniques such as regression analysis, correlation analysis, and hypothesis testing to draw meaningful conclusions and inform decision-making within the hospital.",
+      "complete": true,
+      "generatedTokens": 165,
+      "durationSeconds": 32.43,
+      "sha256": "8d4411dcce1ac917101269468030475a41655ed4b6fc44a6f41fa9ae8e70b1f8",
+      "quantization": "torch dynamic int8 linear layers; float32 embeddings",
+      "transformers": "5.14.1",
+      "torch": "2.9.1+cpu",
+      "topic": "research-methods"
+    },
+    {
+      "engine": {
+        "id": "HuggingFaceTB/SmolLM2-360M-Instruct",
+        "revision": "a10cc1512eabd3dde888204e902eca88bddb4951"
+      },
+      "prompt": "Write a 160-word academic paragraph about the role of peer review in maintaining research quality.",
+      "text": "Peer review is a crucial process that ensures the quality of research, and it is performed by experts in the field. Peer review is a method of evaluating the quality of research, and it is performed by experts in the field. Peer review is a crucial process that ensures the quality of research, and it is performed by experts in the field.",
+      "complete": true,
+      "generatedTokens": 69,
+      "durationSeconds": 12.061,
+      "sha256": "1218a40d6f689268a8c4ca952ead36a8b83f1db2055b4f47468a1704eb734242",
+      "quantization": "torch dynamic int8 linear layers; float32 embeddings",
+      "transformers": "5.14.1",
+      "torch": "2.9.1+cpu",
+      "topic": "general-academic"
+    }
+  ]
+}

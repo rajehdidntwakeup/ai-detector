@@ -1,0 +1,34 @@
+{
+  "baseline": {
+    "id": "rasbt/ai-text-detector-distilbert",
+    "revision": "66e301801e7057ec118553b8c7ba1b6abd7d2e6b",
+    "license": "apache-2.0",
+    "context": 512,
+    "why": "Reproducible baseline and fast local fallback.",
+    "adapterNotes": "Current app behavior; no changes for comparison."
+  },
+  "modernbert": {
+    "id": "rasbt/ai-text-detector-modernbert",
+    "revision": "a6efd4bf6ecd852f332b2569ae0f98cae13b7985",
+    "license": "apache-2.0",
+    "context": 8192,
+    "why": "Publisher documents 8,192-token context.",
+    "adapterNotes": "Validate metadata/temperature; longer context alone cannot resolve the single-window nursing disagreement."
+  },
+  "desklib": {
+    "id": "desklib/ai-text-detector-v1.01",
+    "revision": "5fdea974cd4287c61674951ec78803aa274e2fb7",
+    "license": "mit",
+    "context": null,
+    "why": "Different DeBERTa-based classifier.",
+    "adapterNotes": "Explicit adapter for mean-pooling/single-logit head; verify score direction."
+  },
+  "qwen3-variable": {
+    "id": "rasbt/ai-text-detector-qwen3-0.6b-variable",
+    "revision": "b08d92707d5de35a0b6ccf34e73461a4ab954a33",
+    "license": "apache-2.0",
+    "context": 1024,
+    "why": "Different classifier architecture for comparison.",
+    "adapterNotes": "Follow documented readout position and 1,024-token training context; verify CPU memory/latency. Separate from the Qwen rewriting model."
+  }
+}

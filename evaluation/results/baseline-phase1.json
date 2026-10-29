@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "engine": {
+    "id": "rasbt/ai-text-detector-distilbert",
+    "revision": "66e301801e7057ec118553b8c7ba1b6abd7d2e6b",
+    "offline": true
+  },
+  "python": "3.13.1",
+  "transformers": "4.57.3",
+  "torch": "2.9.1+cpu",
+  "manifestSha256": "df83aa83887f431fffc1ec1829176221c7c7b6145b238980b6038689dc9597ea",
+  "offlineVerified": true,
+  "loadMs": 5616,
+  "rows": [
+    {
+      "id": "known-ai-1",
+      "label": "ai",
+      "split": "regression",
+      "group": "assistant-writing-experiments-2026-10-28",
+      "sha256": "be843da2a984a02de81c42ed6382340af2dc1c58fd67da6563051c2b2f7a7abc",
+      "score": 0.9950856566429138,
+      "verdict": "ai",
+      "words": 172,
+      "durationMs": 490
+    },
+    {
+      "id": "known-ai-2",
+      "label": "ai",
+      "split": "regression",
+      "group": "assistant-writing-experiments-2026-10-28",
+      "sha256": "148a899956b45873b385d33a47f4a491671749c63240ebfc2284d5cf5fcec1b5",
+      "score": 0.035372018814086914,
+      "verdict": "human",
+      "words": 140,
+      "durationMs": 440
+    },
+    {
+      "id": "known-ai-3",
+      "label": "ai",
+      "split": "regression",
+      "group": "assistant-writing-experiments-2026-10-28",
+      "sha256": "6e7445c1a4d1ecb2717421589b14c93f93bd4076357353a873748fca6f3bc643",
+      "score": 0.9694412350654602,
+      "verdict": "ai",
+      "words": 137,
+      "durationMs": 502
+    }
+  ],
+  "bySplit": {
+    "regression": {
+      "n": 3,
+      "labels": {
+        "ai": 3
+      },
+      "falsePositiveRate": {
+        "count": 0,
+        "n": 0,
+        "rate": null,
+        "wilson95": null
+      },
+      "aiRecall": {
+        "count": 2,
+        "n": 3,
+        "rate": 0.6666666666666666,
+        "wilson95": [
+          0.2076549551264879,
+          0.9385096847238394
+        ]
+      },
+      "uncertainRate": {
+        "count": 0,
+        "n": 3,
+        "rate": 0.0,
+        "wilson95": [
+          0,
+          0.5615060804490177
+        ]
+      }
+    }
+  },
+  "notice": "Regression data is not a held-out accuracy benchmark. Missing classes have null metrics. Mixed/edited samples are excluded from binary recall and false positives."
+}

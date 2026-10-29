@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "protocol": "turnitindetector-phase5-v1",
+  "reviewedAt": "2026-10-29T20:32:39Z",
+  "decision": "retain_baseline_no_promotion",
+  "baselinePerformance": {
+    "status": "passed_measured_workloads",
+    "documentSpeedPass": true,
+    "fullCoverageAndSpeedPass": true,
+    "memoryPass": true,
+    "measurements": {
+      "document": {
+        "eligibleCases": 3,
+        "supportedCases": 3,
+        "count": 15,
+        "p50Seconds": 0.5176828999537975,
+        "p95Seconds": 2.1099010999314487,
+        "maxSeconds": 2.1099010999314487
+      },
+      "full-analysis": {
+        "eligibleCases": 3,
+        "supportedCases": 3,
+        "count": 15,
+        "p50Seconds": 6.8055088999681175,
+        "p95Seconds": 14.515177399851382,
+        "maxSeconds": 14.515177399851382
+      }
+    },
+    "peakProcessRssBytes": 601317376,
+    "initializationSeconds": 22.895917099900544
+  },
+  "qwenPerformance": {
+    "status": "failed_default_workload_gate",
+    "documentSpeedPass": false,
+    "fullCoverageAndSpeedPass": false,
+    "memoryPass": true,
+    "measurements": {
+      "document": {
+        "eligibleCases": 3,
+        "supportedCases": 3,
+        "count": 6,
+        "p50Seconds": 33.066648349980824,
+        "p95Seconds": 45.9298839000985,
+        "maxSeconds": 45.9298839000985
+      },
+      "full-analysis": {
+        "eligibleCases": 3,
+        "supportedCases": 0,
+        "count": 0,
+        "p50Seconds": null,
+        "p95Seconds": null
+      }
+    },
+    "peakProcessRssBytes": 1299083264,
+    "initializationSeconds": 17.57693129987456
+  },
+  "localRegression": {
+    "status": "passed",
+    "unitTests": 63,
+    "unitPassed": true,
+    "liveIntegrationPassed": true,
+    "retainedBrowserEvidencePassed": true,
+    "offlineAndPreprocessingParity": "Phase 4 real-model passes retained; runtime app sources unchanged in Phase 5"
+  },
+  "referenceFidelity": {
+    "status": "unproven",
+    "independentConfirmationDocuments": 0,
+    "recordedObservedCaptures": 1,
+    "reason": "Only one inspected reference discovery document; missing runtime/UI observations and declared local differences."
+  },
+  "referenceApproximation": {
+    "status": "unproven",
+    "reason": "No fresh confirmation set, validated mapping, or paired improvement interval."
+  },
+  "authorshipQuality": {
+    "status": "unproven",
+    "records": 28,
+    "labelCounts": {
+      "ai": 17,
+      "human": 5,
+      "edited": 3,
+      "mixed": 3
+    },
+    "reason": "Human controls have incomplete provenance; no independent promotion evaluation."
+  },
+  "selectionUnchanged": true,
+  "baselineManifestUnchanged": true,
+  "artifactHashes": {
+    "evaluation/acceptance_protocol.json": "ec491b95175cef5498748ec6df2318a3217da366e9bf0e35c68ecb470aa8989f",
+    ".runtime/phase5-baseline.json": "91872d608bdb39b94cf7b3c179832cd39a02bbcf9f69775e2475d9b5c4826059",
+    ".runtime/phase5-qwen.json": "a79ab13774131171adf438fd25eb94df29778cc150f483dc3b732234216d1f29",
+    ".runtime/phase5-unit-tests.log": "ca9f77facfa7edb30d9800d6ad9efa006e671c894d036b4b3cd388b8f94a87cf",
+    ".runtime/phase5-integration.log": "cc77325a0f4edb9e8acac51fb0e75941668e0bb1e21b69650012127a20bd5cf9",
+    ".runtime/phase4-browser.log": "cf0ad54ccbb09707d71e7144e1af37938d10c4ee3ea8c6a50960f07744195539",
+    "docs/turnitindetector-phase4-integration.md": "6f84dea1f0d110925a32c4fd35714529515b6f72036ea8d18f484015a2e9fe90",
+    "evaluation/baseline_manifest.json": "f8b602409128eaa5b676afafc24f292c04e9e2ba485cfbeee230054f68dafdce",
+    "evaluation/selection.json": "cea6dbccaa2a1fa862d978b68915043d39253e78a1bf44eb5b7a484746300a77",
+    "evaluation/results/selection-before-reference-phase5.json": "cea6dbccaa2a1fa862d978b68915043d39253e78a1bf44eb5b7a484746300a77",
+    "evaluation/manifest.jsonl": "e174e50401d0b9551b2b584059595567779d754d92c660d4a1ef1c65cf7683f1",
+    "reference-raw/phase3-comparison.json": "d1e4ae8dcab774c237082e7ca435b134fe93c18fe277188ec53b21182e45855c",
+    "detector.py": "c01e1663999469b03fea149acba57cb25bb9098c72d672285035d49f4d40627c",
+    "detection_service.py": "4f35efa7cd0e8de6b4595d2fdfb266fc77d45526e8606ac952aca049c58feb3b",
+    "model_info.py": "8e345cadba44ca9949724c962f67ddc98cc1d4383ae94799308be7ef076f35ce",
+    "server.py": "776c5a85c415af0f8c033fa4266835da4459777ad5e11f16c4dd0849942e2a50",
+    "dist/index.html": "1927d56cf5809d347f72f3b435b05aa7eceb14fc9c36ab6a1b418744984063dc",
+    "dist/app.js": "8712d4ae18e2ba55485eb52fe8ba595431914b6c05567272f06dfc5ff40b4909",
+    "dist/style.css": "82c1211e833a3403117c4ff85a206b8ae2254cfc2e347411a5b56ad17a8645d6",
+    "engines/__init__.py": "2bd2e033c4ba5fecde79c362f095828711efbb3b8cfac1a6a1b0bf8f16379a2e",
+    "engines/inputs.py": "cef5a891989a3a62b067f077130dc4fa1d5bf3478ee96f4247d338a8dc221523",
+    "evaluation/benchmark_acceptance.py": "4c914dc7f72ad7179f9129bff4f0adaf4a81b1e0b67beda226c8805350b9f889",
+    "evaluation/record_acceptance.py": "e1f685d801fef513f39aa901377409a72ac46f77fa9c4e09176d6edf13e29c73",
+    "tests/integration_smoke.py": "f1884abe8932723aafd7067c3a0c7cf511970f8de185379a079a4121535a9ca6"
+  },
+  "limits": [
+    "Acceptance review is not a claim that all gates passed.",
+    "Performance covers three synthetic workload cases per size with limited repeats.",
+    "Test-log markers summarize recorded runs; hashes preserve the exact evidence files.",
+    "Browser and offline/parity evidence is retained from Phase 4, not a fresh rerun."
+  ]
+}

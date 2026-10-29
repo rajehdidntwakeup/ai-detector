@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "protocol": "turnitindetector-phase5-v1",
+  "source": "docs/turnitindetector-update-plan.md, Phase 5 gates established before this acceptance run",
+  "reference": {
+    "maxMeanAbsoluteErrorPoints": 10,
+    "minimumRelativeImprovementOverBaseline": 0.20,
+    "minimumVerdictAgreement": 0.85,
+    "minimumFreshIndependentConfirmationDocuments": 60,
+    "pairedUncertaintyMustSupportImprovement": true
+  },
+  "authorship": {
+    "minimumAcademicRecallImprovementPoints": 10,
+    "maxObservedHumanFalsePositiveRate": 0.05,
+    "maxFalsePositiveIncreasePoints": 2,
+    "verifiedProvenanceAndUncertaintyRequired": true
+  },
+  "performance": {
+    "warmDocumentWords": 400,
+    "maxWarmDocumentP95Seconds": 10,
+    "fullAnalysisWords": 2000,
+    "maxFullAnalysisSeconds": 60,
+    "maxPeakProcessRSSBytes": 8000000000,
+    "completeWorkloadCoverageRequiredForDefault": true
+  },
+  "regression": {
+    "unitSuite": true,
+    "offlineInference": true,
+    "enginePreprocessingParity": true,
+    "liveIntegration": true,
+    "browserAndExports": true,
+    "exactTextReconstruction": true,
+    "noSilentTruncationOrEngineFallback": true
+  },
+  "decisionRule": "Unproven reference or authorship gates prevent promotion regardless of performance; missing evidence is not a pass."
+}

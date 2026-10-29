@@ -1,0 +1,41 @@
+{
+  "engine": {
+    "id": "Qwen/Qwen3-0.6B",
+    "revision": "c1899de289a04d12100db370d81485cdf75e47ca"
+  },
+  "quantization": "torch dynamic int8 linear layers; float32 embeddings",
+  "seed": 42,
+  "torch": "2.9.1+cpu",
+  "loadMs": 11846,
+  "offlineVerified": true,
+  "rows": [
+    {
+      "id": "known-ai-1",
+      "input": "Digital technology plays an increasingly important role in modern education. By providing access to a wide range of resources, it can support learning both inside and outside the classroom. However, its effectiveness depends on how thoughtfully it is integrated into educational practice.\n\nOne significant benefit is accessibility. Online materials allow students to review information at their own pace and revisit concepts that require additional attention. Furthermore, interactive activities can encourage participation and provide immediate feedback. These features can help teachers identify areas where students need further support.\n\nAnother important consideration is balance. Although digital tools offer valuable opportunities, they should complement rather than replace meaningful interaction between teachers and students. Clear guidance, appropriate training, and reliable access are necessary to ensure that technology serves a practical educational purpose.\n\nIn conclusion, digital technology can contribute positively to education when it is used in a deliberate and balanced manner. By combining accessible resources with effective teaching practices, schools can create learning environments that support student development while addressing the challenges associated with technological change.",
+      "output": "**Revised passage:**\n\nDigital technology plays a growing role in modern education, providing access to a vast range of resources that can support learning both inside and outside the classroom. However, its effectiveness is contingent on how well it is integrated into educational practices. One significant benefit is accessibility\u2014online materials enable students to review information at their own pace and revisit concepts that require additional attention. Interactive activities can also encourage student participation and provide immediate feedback, which can enhance learning outcomes.\n\nAnother important consideration is balance. While digital tools offer valuable opportunities, they should complement rather than replace meaningful interactions between teachers and students. Clear guidance, appropriate training, and reliable access are essential to ensure that technology serves a practical educational purpose.\n\nIn conclusion, digital technology can contribute positively to education when used in a deliberate and balanced manner. By combining accessible resources with effective teaching practices, schools can create learning environments that support student development while addressing the challenges associated with technological change.",
+      "complete": true,
+      "durationSeconds": 47.557,
+      "generatedTokens": 188,
+      "review": "pending"
+    },
+    {
+      "id": "known-ai-2",
+      "input": "Our teacher put the week's reading online, which sounded like a small change until I missed a lesson. I could find the handout without asking three classmates to send me photographs of it. That part worked well. The quiz was less useful: it marked my answer wrong because I had typed a space after the number.\n\nI like being able to go back over a difficult explanation at home. I don't like pretending that a bright screen makes every activity interesting. Sometimes a class discussion helps more than another set of questions on a website. Last week, someone asked why our answers were different, and we spent ten minutes working through the problem together.\n\nI'd keep the online readings and fix the quiz. I'd also leave room for the teacher to put the laptops away when talking would work better.",
+      "output": "Our teacher put the week's reading online, which sounds like a small change until I missed a lesson. I could find the handout without asking three classmates to send me photos. The part worked well. The quiz was less useful, as it marked my answer wrong because I had typed a space after the number.  \n\nI am able to go back over a difficult explanation at home. I don't like pretending that a bright screen makes every activity interesting. Sometimes, a class discussion helps more than a set of questions on a website. Last week, someone asked why our answers were different, and we spent ten minutes working through the problem together.  \n\nI'd keep the online readings and fix the quiz. I'd also leave room for the teacher to put the laptops away when talking.",
+      "complete": true,
+      "durationSeconds": 39.005,
+      "generatedTokens": 158,
+      "review": "pending"
+    },
+    {
+      "id": "known-ai-3",
+      "input": "Photosynthesis is the process through which plants convert light energy into chemical energy. In plants, this process takes place within chloroplasts, which contain the pigment chlorophyll. Chlorophyll absorbs light and helps drive the reactions that produce sugars from carbon dioxide and water. Oxygen is released as a byproduct.\n\nThe process involves two connected stages. During the light-dependent reactions, energy from sunlight is used to generate ATP and NADPH. Water molecules are split, releasing oxygen. During the Calvin cycle, ATP and NADPH support the conversion of carbon dioxide into organic compounds that can be used to form sugars.\n\nPhotosynthesis supports plant growth and provides a foundation for many food chains. Its rate can be influenced by light intensity, temperature, and the availability of carbon dioxide. Understanding these factors helps explain why plants grow differently under different environmental conditions.",
+      "output": "Photosynthesis is the process through which plants convert light energy into chemical energy. In plants, this process occurs in the chloroplasts, which contain the pigment chlorophyll. Chlorophyll absorbs light, which is used to drive the reactions that produce sugars from carbon dioxide and water. Oxygen is released as a byproduct. The process involves two connected stages: during the light-dependent reactions, energy from sunlight is used to produce ATP and NADPH, while water molecules are split, releasing oxygen. During the Calvin cycle, ATP and NADPH are used to convert carbon dioxide into organic compounds, which are then used to form sugars. Photosynthesis supports plant growth and provides a foundation for many food chains. Its rate can be influenced by factors such as light intensity, temperature, and the availability of carbon dioxide. Understanding these factors helps explain why plants grow differently under different environmental conditions.",
+      "complete": true,
+      "durationSeconds": 39.463,
+      "generatedTokens": 178,
+      "review": "pending"
+    }
+  ],
+  "notice": "Feasibility probes only; no quality, latency percentile, or RAM acceptance established. max_time is checked between generation steps, not a hard process deadline."
+}

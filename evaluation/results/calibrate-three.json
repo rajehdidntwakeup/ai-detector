@@ -1,0 +1,2869 @@
+{
+  "schemaVersion": 1,
+  "fpTarget": 0.05,
+  "engines": [
+    {
+      "engine": {
+        "id": "rasbt/ai-text-detector-distilbert",
+        "revision": "66e301801e7057ec118553b8c7ba1b6abd7d2e6b",
+        "offline": true
+      },
+      "loadMs": 21323,
+      "peakLoadMemoryKb": 139830,
+      "peakInferenceMemoryKb": 138662,
+      "thresholds": {
+        "ai": 0.020748542621731758,
+        "human": -0.27925145737826823,
+        "aiRecall": 0.75,
+        "falsePositiveRate": 0.0
+      },
+      "calibration": {
+        "n": 5,
+        "falsePositiveRate": {
+          "count": 0,
+          "n": 1,
+          "rate": 0.0,
+          "wilson95": [
+            0,
+            0.7934567085261071
+          ]
+        },
+        "aiRecall": {
+          "count": 3,
+          "n": 4,
+          "rate": 0.75,
+          "wilson95": [
+            0.3006360524426366,
+            0.9544139373553637
+          ]
+        },
+        "uncertainRate": {
+          "count": 2,
+          "n": 5,
+          "rate": 0.4,
+          "wilson95": [
+            0.1176182311592533,
+            0.769280067791163
+          ]
+        },
+        "brier": 0.30193518210336323,
+        "ece": 0.3437313558533788
+      },
+      "development": {
+        "n": 7,
+        "falsePositiveRate": {
+          "count": 0,
+          "n": 2,
+          "rate": 0.0,
+          "wilson95": [
+            0,
+            0.6576280471103807
+          ]
+        },
+        "aiRecall": {
+          "count": 4,
+          "n": 5,
+          "rate": 0.8,
+          "wilson95": [
+            0.3755282641185388,
+            0.9637768390302125
+          ]
+        },
+        "uncertainRate": {
+          "count": 3,
+          "n": 7,
+          "rate": 0.42857142857142855,
+          "wilson95": [
+            0.15821692226262685,
+            0.7495457695909742
+          ]
+        },
+        "brier": 0.2758226842803838,
+        "ece": 0.288655633921735
+      },
+      "heldout": {
+        "n": 7,
+        "falsePositiveRate": {
+          "count": 0,
+          "n": 2,
+          "rate": 0.0,
+          "wilson95": [
+            0,
+            0.6576280471103807
+          ]
+        },
+        "aiRecall": {
+          "count": 3,
+          "n": 5,
+          "rate": 0.6,
+          "wilson95": [
+            0.23071993220883708,
+            0.8823817688407467
+          ]
+        },
+        "uncertainRate": {
+          "count": 4,
+          "n": 7,
+          "rate": 0.5714285714285714,
+          "wilson95": [
+            0.2504542304090258,
+            0.8417830777373732
+          ]
+        },
+        "brier": 0.415095526612089,
+        "ece": 0.4288095826923381
+      },
+      "subgroups": {
+        "development": {
+          "domain": {
+            "nursing": {
+              "n": 5,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              },
+              "aiRecall": {
+                "count": 4,
+                "n": 4,
+                "rate": 1.0,
+                "wilson95": [
+                  0.5100999795960008,
+                  1
+                ]
+              },
+              "uncertainRate": {
+                "count": 1,
+                "n": 5,
+                "rate": 0.2,
+                "wilson95": [
+                  0.03622316096978745,
+                  0.6244717358814613
+                ]
+              }
+            },
+            "general-academic": {
+              "n": 1,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              },
+              "aiRecall": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "uncertainRate": {
+                "count": 1,
+                "n": 1,
+                "rate": 1.0,
+                "wilson95": [
+                  0.20654329147389294,
+                  1
+                ]
+              }
+            },
+            "research": {
+              "n": 1,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "aiRecall": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              },
+              "uncertainRate": {
+                "count": 1,
+                "n": 1,
+                "rate": 1.0,
+                "wilson95": [
+                  0.20654329147389294,
+                  1
+                ]
+              }
+            }
+          },
+          "citationDensity": {
+            "low": {
+              "n": 5,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 2,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.6576280471103807
+                ]
+              },
+              "aiRecall": {
+                "count": 2,
+                "n": 3,
+                "rate": 0.6666666666666666,
+                "wilson95": [
+                  0.2076549551264879,
+                  0.9385096847238394
+                ]
+              },
+              "uncertainRate": {
+                "count": 3,
+                "n": 5,
+                "rate": 0.6,
+                "wilson95": [
+                  0.23071993220883708,
+                  0.8823817688407467
+                ]
+              }
+            },
+            "high": {
+              "n": 1,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "aiRecall": {
+                "count": 1,
+                "n": 1,
+                "rate": 1.0,
+                "wilson95": [
+                  0.20654329147389294,
+                  1
+                ]
+              },
+              "uncertainRate": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              }
+            },
+            "medium": {
+              "n": 1,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "aiRecall": {
+                "count": 1,
+                "n": 1,
+                "rate": 1.0,
+                "wilson95": [
+                  0.20654329147389294,
+                  1
+                ]
+              },
+              "uncertainRate": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              }
+            }
+          },
+          "generatorFamily": {
+            "unknown": {
+              "n": 2,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 2,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.6576280471103807
+                ]
+              },
+              "aiRecall": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "uncertainRate": {
+                "count": 2,
+                "n": 2,
+                "rate": 1.0,
+                "wilson95": [
+                  0.34237195288961925,
+                  1
+                ]
+              }
+            },
+            "manual-synthetic": {
+              "n": 3,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "aiRecall": {
+                "count": 3,
+                "n": 3,
+                "rate": 1.0,
+                "wilson95": [
+                  0.43849391955098227,
+                  1
+                ]
+              },
+              "uncertainRate": {
+                "count": 0,
+                "n": 3,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.5615060804490177
+                ]
+              }
+            },
+            "qwen3-0.6b": {
+              "n": 2,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "aiRecall": {
+                "count": 1,
+                "n": 2,
+                "rate": 0.5,
+                "wilson95": [
+                  0.09452865480086614,
+                  0.9054713451991339
+                ]
+              },
+              "uncertainRate": {
+                "count": 1,
+                "n": 2,
+                "rate": 0.5,
+                "wilson95": [
+                  0.09452865480086614,
+                  0.9054713451991339
+                ]
+              }
+            }
+          }
+        },
+        "calibration": {
+          "domain": {
+            "medicine": {
+              "n": 1,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              },
+              "aiRecall": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "uncertainRate": {
+                "count": 1,
+                "n": 1,
+                "rate": 1.0,
+                "wilson95": [
+                  0.20654329147389294,
+                  1
+                ]
+              }
+            },
+            "health-sciences": {
+              "n": 1,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "aiRecall": {
+                "count": 1,
+                "n": 1,
+                "rate": 1.0,
+                "wilson95": [
+                  0.20654329147389294,
+                  1
+                ]
+              },
+              "uncertainRate": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              }
+            },
+            "nursing": {
+              "n": 1,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "aiRecall": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              },
+              "uncertainRate": {
+                "count": 1,
+                "n": 1,
+                "rate": 1.0,
+                "wilson95": [
+                  0.20654329147389294,
+                  1
+                ]
+              }
+            },
+            "health": {
+              "n": 1,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "aiRecall": {
+                "count": 1,
+                "n": 1,
+                "rate": 1.0,
+                "wilson95": [
+                  0.20654329147389294,
+                  1
+                ]
+              },
+              "uncertainRate": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              }
+            },
+            "general": {
+              "n": 1,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "aiRecall": {
+                "count": 1,
+                "n": 1,
+                "rate": 1.0,
+                "wilson95": [
+                  0.20654329147389294,
+                  1
+                ]
+              },
+              "uncertainRate": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              }
+            }
+          },
+          "citationDensity": {
+            "low": {
+              "n": 5,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              },
+              "aiRecall": {
+                "count": 3,
+                "n": 4,
+                "rate": 0.75,
+                "wilson95": [
+                  0.3006360524426366,
+                  0.9544139373553637
+                ]
+              },
+              "uncertainRate": {
+                "count": 2,
+                "n": 5,
+                "rate": 0.4,
+                "wilson95": [
+                  0.1176182311592533,
+                  0.769280067791163
+                ]
+              }
+            }
+          },
+          "generatorFamily": {
+            "unknown": {
+              "n": 1,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              },
+              "aiRecall": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "uncertainRate": {
+                "count": 1,
+                "n": 1,
+                "rate": 1.0,
+                "wilson95": [
+                  0.20654329147389294,
+                  1
+                ]
+              }
+            },
+            "manual-synthetic": {
+              "n": 2,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "aiRecall": {
+                "count": 1,
+                "n": 2,
+                "rate": 0.5,
+                "wilson95": [
+                  0.09452865480086614,
+                  0.9054713451991339
+                ]
+              },
+              "uncertainRate": {
+                "count": 1,
+                "n": 2,
+                "rate": 0.5,
+                "wilson95": [
+                  0.09452865480086614,
+                  0.9054713451991339
+                ]
+              }
+            },
+            "qwen3-0.6b": {
+              "n": 2,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "aiRecall": {
+                "count": 2,
+                "n": 2,
+                "rate": 1.0,
+                "wilson95": [
+                  0.34237195288961925,
+                  1
+                ]
+              },
+              "uncertainRate": {
+                "count": 0,
+                "n": 2,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.6576280471103807
+                ]
+              }
+            }
+          }
+        },
+        "heldout": {
+          "domain": {
+            "general-academic": {
+              "n": 2,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 2,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.6576280471103807
+                ]
+              },
+              "aiRecall": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "uncertainRate": {
+                "count": 2,
+                "n": 2,
+                "rate": 1.0,
+                "wilson95": [
+                  0.34237195288961925,
+                  1
+                ]
+              }
+            },
+            "health-sciences": {
+              "n": 2,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "aiRecall": {
+                "count": 2,
+                "n": 2,
+                "rate": 1.0,
+                "wilson95": [
+                  0.34237195288961925,
+                  1
+                ]
+              },
+              "uncertainRate": {
+                "count": 0,
+                "n": 2,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.6576280471103807
+                ]
+              }
+            },
+            "health": {
+              "n": 1,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "aiRecall": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              },
+              "uncertainRate": {
+                "count": 1,
+                "n": 1,
+                "rate": 1.0,
+                "wilson95": [
+                  0.20654329147389294,
+                  1
+                ]
+              }
+            },
+            "research": {
+              "n": 1,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "aiRecall": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              },
+              "uncertainRate": {
+                "count": 1,
+                "n": 1,
+                "rate": 1.0,
+                "wilson95": [
+                  0.20654329147389294,
+                  1
+                ]
+              }
+            },
+            "general": {
+              "n": 1,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "aiRecall": {
+                "count": 1,
+                "n": 1,
+                "rate": 1.0,
+                "wilson95": [
+                  0.20654329147389294,
+                  1
+                ]
+              },
+              "uncertainRate": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              }
+            }
+          },
+          "citationDensity": {
+            "low": {
+              "n": 7,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 2,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.6576280471103807
+                ]
+              },
+              "aiRecall": {
+                "count": 3,
+                "n": 5,
+                "rate": 0.6,
+                "wilson95": [
+                  0.23071993220883708,
+                  0.8823817688407467
+                ]
+              },
+              "uncertainRate": {
+                "count": 4,
+                "n": 7,
+                "rate": 0.5714285714285714,
+                "wilson95": [
+                  0.2504542304090258,
+                  0.8417830777373732
+                ]
+              }
+            }
+          },
+          "generatorFamily": {
+            "unknown": {
+              "n": 2,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 2,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.6576280471103807
+                ]
+              },
+              "aiRecall": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "uncertainRate": {
+                "count": 2,
+                "n": 2,
+                "rate": 1.0,
+                "wilson95": [
+                  0.34237195288961925,
+                  1
+                ]
+              }
+            },
+            "manual-synthetic": {
+              "n": 2,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "aiRecall": {
+                "count": 2,
+                "n": 2,
+                "rate": 1.0,
+                "wilson95": [
+                  0.34237195288961925,
+                  1
+                ]
+              },
+              "uncertainRate": {
+                "count": 0,
+                "n": 2,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.6576280471103807
+                ]
+              }
+            },
+            "smolllm2-360m": {
+              "n": 3,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "aiRecall": {
+                "count": 1,
+                "n": 3,
+                "rate": 0.3333333333333333,
+                "wilson95": [
+                  0.0614903152761605,
+                  0.7923450448735121
+                ]
+              },
+              "uncertainRate": {
+                "count": 2,
+                "n": 3,
+                "rate": 0.6666666666666666,
+                "wilson95": [
+                  0.2076549551264879,
+                  0.9385096847238394
+                ]
+              }
+            }
+          }
+        }
+      },
+      "perCaseHeldout": [
+        {
+          "id": "pd-human-darwin-1",
+          "label": "human",
+          "score": 0.00043367609032429755,
+          "verdict": "uncertain",
+          "domain": "general-academic",
+          "generatorFamily": null
+        },
+        {
+          "id": "pd-human-education-1",
+          "label": "human",
+          "score": 0.0005449064774438739,
+          "verdict": "uncertain",
+          "domain": "general-academic",
+          "generatorFamily": null
+        },
+        {
+          "id": "synth-ai-stats-1",
+          "label": "ai",
+          "score": 0.9999388456344604,
+          "verdict": "ai",
+          "domain": "health-sciences",
+          "generatorFamily": "manual-synthetic"
+        },
+        {
+          "id": "synth-ai-short-1",
+          "label": "ai",
+          "score": 0.9482790231704712,
+          "verdict": "ai",
+          "domain": "health-sciences",
+          "generatorFamily": "manual-synthetic"
+        },
+        {
+          "id": "edited-ai-rct-1",
+          "label": "edited",
+          "score": 0.006228223908692598,
+          "verdict": "uncertain",
+          "domain": "health-sciences",
+          "generatorFamily": "manual-synthetic"
+        },
+        {
+          "id": "mixed-darwin-ai-1",
+          "label": "mixed",
+          "score": 0.0006487271748483181,
+          "verdict": "uncertain",
+          "domain": "general-academic",
+          "generatorFamily": null
+        },
+        {
+          "id": "gen-smolllm2-360m-health-policy-2",
+          "label": "ai",
+          "score": 0.0006846661563031375,
+          "verdict": "uncertain",
+          "domain": "health",
+          "generatorFamily": "smolllm2-360m"
+        },
+        {
+          "id": "gen-smolllm2-360m-research-methods-3",
+          "label": "ai",
+          "score": 0.017450200393795967,
+          "verdict": "uncertain",
+          "domain": "research",
+          "generatorFamily": "smolllm2-360m"
+        },
+        {
+          "id": "gen-smolllm2-360m-general-academic-4",
+          "label": "ai",
+          "score": 0.031001603230834007,
+          "verdict": "ai",
+          "domain": "general",
+          "generatorFamily": "smolllm2-360m"
+        }
+      ]
+    },
+    {
+      "engine": {
+        "id": "rasbt/ai-text-detector-modernbert",
+        "revision": "a6efd4bf6ecd852f332b2569ae0f98cae13b7985",
+        "offline": true
+      },
+      "loadMs": 1210,
+      "peakLoadMemoryKb": 24128,
+      "peakInferenceMemoryKb": 1318,
+      "thresholds": {
+        "ai": 0.7612841129302979,
+        "human": 0.46128411293029786,
+        "aiRecall": 0.75,
+        "falsePositiveRate": 0.0
+      },
+      "calibration": {
+        "n": 5,
+        "falsePositiveRate": {
+          "count": 0,
+          "n": 1,
+          "rate": 0.0,
+          "wilson95": [
+            0,
+            0.7934567085261071
+          ]
+        },
+        "aiRecall": {
+          "count": 3,
+          "n": 4,
+          "rate": 0.75,
+          "wilson95": [
+            0.3006360524426366,
+            0.9544139373553637
+          ]
+        },
+        "uncertainRate": {
+          "count": 0,
+          "n": 5,
+          "rate": 0.0,
+          "wilson95": [
+            0,
+            0.43449149475208104
+          ]
+        },
+        "brier": 0.2188394976499362,
+        "ece": 0.28833446782082317
+      },
+      "development": {
+        "n": 7,
+        "falsePositiveRate": {
+          "count": 0,
+          "n": 2,
+          "rate": 0.0,
+          "wilson95": [
+            0,
+            0.6576280471103807
+          ]
+        },
+        "aiRecall": {
+          "count": 3,
+          "n": 5,
+          "rate": 0.6,
+          "wilson95": [
+            0.23071993220883708,
+            0.8823817688407467
+          ]
+        },
+        "uncertainRate": {
+          "count": 1,
+          "n": 7,
+          "rate": 0.14285714285714285,
+          "wilson95": [
+            0.02567895594897479,
+            0.51313450331903
+          ]
+        },
+        "brier": 0.1434744186533115,
+        "ece": 0.18764148272540687
+      },
+      "heldout": {
+        "n": 7,
+        "falsePositiveRate": {
+          "count": 0,
+          "n": 2,
+          "rate": 0.0,
+          "wilson95": [
+            0,
+            0.6576280471103807
+          ]
+        },
+        "aiRecall": {
+          "count": 3,
+          "n": 5,
+          "rate": 0.6,
+          "wilson95": [
+            0.23071993220883708,
+            0.8823817688407467
+          ]
+        },
+        "uncertainRate": {
+          "count": 1,
+          "n": 7,
+          "rate": 0.14285714285714285,
+          "wilson95": [
+            0.02567895594897479,
+            0.51313450331903
+          ]
+        },
+        "brier": 0.14501282340764357,
+        "ece": 0.18223592479729891
+      },
+      "subgroups": {
+        "development": {
+          "domain": {
+            "nursing": {
+              "n": 5,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              },
+              "aiRecall": {
+                "count": 3,
+                "n": 4,
+                "rate": 0.75,
+                "wilson95": [
+                  0.3006360524426366,
+                  0.9544139373553637
+                ]
+              },
+              "uncertainRate": {
+                "count": 1,
+                "n": 5,
+                "rate": 0.2,
+                "wilson95": [
+                  0.03622316096978745,
+                  0.6244717358814613
+                ]
+              }
+            },
+            "general-academic": {
+              "n": 1,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              },
+              "aiRecall": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "uncertainRate": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              }
+            },
+            "research": {
+              "n": 1,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "aiRecall": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              },
+              "uncertainRate": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              }
+            }
+          },
+          "citationDensity": {
+            "low": {
+              "n": 5,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 2,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.6576280471103807
+                ]
+              },
+              "aiRecall": {
+                "count": 2,
+                "n": 3,
+                "rate": 0.6666666666666666,
+                "wilson95": [
+                  0.2076549551264879,
+                  0.9385096847238394
+                ]
+              },
+              "uncertainRate": {
+                "count": 0,
+                "n": 5,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.43449149475208104
+                ]
+              }
+            },
+            "high": {
+              "n": 1,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "aiRecall": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              },
+              "uncertainRate": {
+                "count": 1,
+                "n": 1,
+                "rate": 1.0,
+                "wilson95": [
+                  0.20654329147389294,
+                  1
+                ]
+              }
+            },
+            "medium": {
+              "n": 1,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "aiRecall": {
+                "count": 1,
+                "n": 1,
+                "rate": 1.0,
+                "wilson95": [
+                  0.20654329147389294,
+                  1
+                ]
+              },
+              "uncertainRate": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              }
+            }
+          },
+          "generatorFamily": {
+            "unknown": {
+              "n": 2,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 2,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.6576280471103807
+                ]
+              },
+              "aiRecall": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "uncertainRate": {
+                "count": 0,
+                "n": 2,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.6576280471103807
+                ]
+              }
+            },
+            "manual-synthetic": {
+              "n": 3,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "aiRecall": {
+                "count": 2,
+                "n": 3,
+                "rate": 0.6666666666666666,
+                "wilson95": [
+                  0.2076549551264879,
+                  0.9385096847238394
+                ]
+              },
+              "uncertainRate": {
+                "count": 1,
+                "n": 3,
+                "rate": 0.3333333333333333,
+                "wilson95": [
+                  0.0614903152761605,
+                  0.7923450448735121
+                ]
+              }
+            },
+            "qwen3-0.6b": {
+              "n": 2,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "aiRecall": {
+                "count": 1,
+                "n": 2,
+                "rate": 0.5,
+                "wilson95": [
+                  0.09452865480086614,
+                  0.9054713451991339
+                ]
+              },
+              "uncertainRate": {
+                "count": 0,
+                "n": 2,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.6576280471103807
+                ]
+              }
+            }
+          }
+        },
+        "calibration": {
+          "domain": {
+            "medicine": {
+              "n": 1,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              },
+              "aiRecall": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "uncertainRate": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              }
+            },
+            "health-sciences": {
+              "n": 1,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "aiRecall": {
+                "count": 1,
+                "n": 1,
+                "rate": 1.0,
+                "wilson95": [
+                  0.20654329147389294,
+                  1
+                ]
+              },
+              "uncertainRate": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              }
+            },
+            "nursing": {
+              "n": 1,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "aiRecall": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              },
+              "uncertainRate": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              }
+            },
+            "health": {
+              "n": 1,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "aiRecall": {
+                "count": 1,
+                "n": 1,
+                "rate": 1.0,
+                "wilson95": [
+                  0.20654329147389294,
+                  1
+                ]
+              },
+              "uncertainRate": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              }
+            },
+            "general": {
+              "n": 1,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "aiRecall": {
+                "count": 1,
+                "n": 1,
+                "rate": 1.0,
+                "wilson95": [
+                  0.20654329147389294,
+                  1
+                ]
+              },
+              "uncertainRate": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              }
+            }
+          },
+          "citationDensity": {
+            "low": {
+              "n": 5,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              },
+              "aiRecall": {
+                "count": 3,
+                "n": 4,
+                "rate": 0.75,
+                "wilson95": [
+                  0.3006360524426366,
+                  0.9544139373553637
+                ]
+              },
+              "uncertainRate": {
+                "count": 0,
+                "n": 5,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.43449149475208104
+                ]
+              }
+            }
+          },
+          "generatorFamily": {
+            "unknown": {
+              "n": 1,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              },
+              "aiRecall": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "uncertainRate": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              }
+            },
+            "manual-synthetic": {
+              "n": 2,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "aiRecall": {
+                "count": 1,
+                "n": 2,
+                "rate": 0.5,
+                "wilson95": [
+                  0.09452865480086614,
+                  0.9054713451991339
+                ]
+              },
+              "uncertainRate": {
+                "count": 0,
+                "n": 2,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.6576280471103807
+                ]
+              }
+            },
+            "qwen3-0.6b": {
+              "n": 2,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "aiRecall": {
+                "count": 2,
+                "n": 2,
+                "rate": 1.0,
+                "wilson95": [
+                  0.34237195288961925,
+                  1
+                ]
+              },
+              "uncertainRate": {
+                "count": 0,
+                "n": 2,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.6576280471103807
+                ]
+              }
+            }
+          }
+        },
+        "heldout": {
+          "domain": {
+            "general-academic": {
+              "n": 2,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 2,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.6576280471103807
+                ]
+              },
+              "aiRecall": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "uncertainRate": {
+                "count": 0,
+                "n": 2,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.6576280471103807
+                ]
+              }
+            },
+            "health-sciences": {
+              "n": 2,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "aiRecall": {
+                "count": 2,
+                "n": 2,
+                "rate": 1.0,
+                "wilson95": [
+                  0.34237195288961925,
+                  1
+                ]
+              },
+              "uncertainRate": {
+                "count": 0,
+                "n": 2,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.6576280471103807
+                ]
+              }
+            },
+            "health": {
+              "n": 1,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "aiRecall": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              },
+              "uncertainRate": {
+                "count": 1,
+                "n": 1,
+                "rate": 1.0,
+                "wilson95": [
+                  0.20654329147389294,
+                  1
+                ]
+              }
+            },
+            "research": {
+              "n": 1,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "aiRecall": {
+                "count": 1,
+                "n": 1,
+                "rate": 1.0,
+                "wilson95": [
+                  0.20654329147389294,
+                  1
+                ]
+              },
+              "uncertainRate": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              }
+            },
+            "general": {
+              "n": 1,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "aiRecall": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              },
+              "uncertainRate": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              }
+            }
+          },
+          "citationDensity": {
+            "low": {
+              "n": 7,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 2,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.6576280471103807
+                ]
+              },
+              "aiRecall": {
+                "count": 3,
+                "n": 5,
+                "rate": 0.6,
+                "wilson95": [
+                  0.23071993220883708,
+                  0.8823817688407467
+                ]
+              },
+              "uncertainRate": {
+                "count": 1,
+                "n": 7,
+                "rate": 0.14285714285714285,
+                "wilson95": [
+                  0.02567895594897479,
+                  0.51313450331903
+                ]
+              }
+            }
+          },
+          "generatorFamily": {
+            "unknown": {
+              "n": 2,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 2,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.6576280471103807
+                ]
+              },
+              "aiRecall": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "uncertainRate": {
+                "count": 0,
+                "n": 2,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.6576280471103807
+                ]
+              }
+            },
+            "manual-synthetic": {
+              "n": 2,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "aiRecall": {
+                "count": 2,
+                "n": 2,
+                "rate": 1.0,
+                "wilson95": [
+                  0.34237195288961925,
+                  1
+                ]
+              },
+              "uncertainRate": {
+                "count": 0,
+                "n": 2,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.6576280471103807
+                ]
+              }
+            },
+            "smolllm2-360m": {
+              "n": 3,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "aiRecall": {
+                "count": 1,
+                "n": 3,
+                "rate": 0.3333333333333333,
+                "wilson95": [
+                  0.0614903152761605,
+                  0.7923450448735121
+                ]
+              },
+              "uncertainRate": {
+                "count": 1,
+                "n": 3,
+                "rate": 0.3333333333333333,
+                "wilson95": [
+                  0.0614903152761605,
+                  0.7923450448735121
+                ]
+              }
+            }
+          }
+        }
+      },
+      "perCaseHeldout": [
+        {
+          "id": "pd-human-darwin-1",
+          "label": "human",
+          "score": 0.0012999287573620677,
+          "verdict": "human",
+          "domain": "general-academic",
+          "generatorFamily": null
+        },
+        {
+          "id": "pd-human-education-1",
+          "label": "human",
+          "score": 0.00034868167131207883,
+          "verdict": "human",
+          "domain": "general-academic",
+          "generatorFamily": null
+        },
+        {
+          "id": "synth-ai-stats-1",
+          "label": "ai",
+          "score": 0.9994804263114929,
+          "verdict": "ai",
+          "domain": "health-sciences",
+          "generatorFamily": "manual-synthetic"
+        },
+        {
+          "id": "synth-ai-short-1",
+          "label": "ai",
+          "score": 0.9956231713294983,
+          "verdict": "ai",
+          "domain": "health-sciences",
+          "generatorFamily": "manual-synthetic"
+        },
+        {
+          "id": "edited-ai-rct-1",
+          "label": "edited",
+          "score": 0.9878656268119812,
+          "verdict": "ai",
+          "domain": "health-sciences",
+          "generatorFamily": "manual-synthetic"
+        },
+        {
+          "id": "mixed-darwin-ai-1",
+          "label": "mixed",
+          "score": 0.9926689863204956,
+          "verdict": "ai",
+          "domain": "general-academic",
+          "generatorFamily": null
+        },
+        {
+          "id": "gen-smolllm2-360m-health-policy-2",
+          "label": "ai",
+          "score": 0.7460070848464966,
+          "verdict": "uncertain",
+          "domain": "health",
+          "generatorFamily": "smolllm2-360m"
+        },
+        {
+          "id": "gen-smolllm2-360m-research-methods-3",
+          "label": "ai",
+          "score": 0.9555396437644958,
+          "verdict": "ai",
+          "domain": "research",
+          "generatorFamily": "smolllm2-360m"
+        },
+        {
+          "id": "gen-smolllm2-360m-general-academic-4",
+          "label": "ai",
+          "score": 0.02604958973824978,
+          "verdict": "human",
+          "domain": "general",
+          "generatorFamily": "smolllm2-360m"
+        }
+      ]
+    },
+    {
+      "engine": {
+        "id": "desklib/ai-text-detector-v1.01",
+        "revision": "5fdea974cd4287c61674951ec78803aa274e2fb7",
+        "offline": true
+      },
+      "loadMs": 15639,
+      "peakLoadMemoryKb": 75020,
+      "peakInferenceMemoryKb": 21046,
+      "thresholds": {
+        "ai": 0.9686927795410156,
+        "human": 0.6686927795410156,
+        "aiRecall": 0.75,
+        "falsePositiveRate": 0.0
+      },
+      "calibration": {
+        "n": 5,
+        "falsePositiveRate": {
+          "count": 0,
+          "n": 1,
+          "rate": 0.0,
+          "wilson95": [
+            0,
+            0.7934567085261071
+          ]
+        },
+        "aiRecall": {
+          "count": 3,
+          "n": 4,
+          "rate": 0.75,
+          "wilson95": [
+            0.3006360524426366,
+            0.9544139373553637
+          ]
+        },
+        "uncertainRate": {
+          "count": 0,
+          "n": 5,
+          "rate": 0.0,
+          "wilson95": [
+            0,
+            0.43449149475208104
+          ]
+        },
+        "brier": 0.12382340511089626,
+        "ece": 0.08971349596977236
+      },
+      "development": {
+        "n": 7,
+        "falsePositiveRate": {
+          "count": 0,
+          "n": 2,
+          "rate": 0.0,
+          "wilson95": [
+            0,
+            0.6576280471103807
+          ]
+        },
+        "aiRecall": {
+          "count": 4,
+          "n": 5,
+          "rate": 0.8,
+          "wilson95": [
+            0.3755282641185388,
+            0.9637768390302125
+          ]
+        },
+        "uncertainRate": {
+          "count": 1,
+          "n": 7,
+          "rate": 0.14285714285714285,
+          "wilson95": [
+            0.02567895594897479,
+            0.51313450331903
+          ]
+        },
+        "brier": 0.004136977714117069,
+        "ece": 0.03819106066865579
+      },
+      "heldout": {
+        "n": 7,
+        "falsePositiveRate": {
+          "count": 0,
+          "n": 2,
+          "rate": 0.0,
+          "wilson95": [
+            0,
+            0.6576280471103807
+          ]
+        },
+        "aiRecall": {
+          "count": 4,
+          "n": 5,
+          "rate": 0.8,
+          "wilson95": [
+            0.3755282641185388,
+            0.9637768390302125
+          ]
+        },
+        "uncertainRate": {
+          "count": 1,
+          "n": 7,
+          "rate": 0.14285714285714285,
+          "wilson95": [
+            0.02567895594897479,
+            0.51313450331903
+          ]
+        },
+        "brier": 0.018554237791234333,
+        "ece": 0.0737499676511756
+      },
+      "subgroups": {
+        "development": {
+          "domain": {
+            "nursing": {
+              "n": 5,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              },
+              "aiRecall": {
+                "count": 3,
+                "n": 4,
+                "rate": 0.75,
+                "wilson95": [
+                  0.3006360524426366,
+                  0.9544139373553637
+                ]
+              },
+              "uncertainRate": {
+                "count": 1,
+                "n": 5,
+                "rate": 0.2,
+                "wilson95": [
+                  0.03622316096978745,
+                  0.6244717358814613
+                ]
+              }
+            },
+            "general-academic": {
+              "n": 1,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              },
+              "aiRecall": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "uncertainRate": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              }
+            },
+            "research": {
+              "n": 1,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "aiRecall": {
+                "count": 1,
+                "n": 1,
+                "rate": 1.0,
+                "wilson95": [
+                  0.20654329147389294,
+                  1
+                ]
+              },
+              "uncertainRate": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              }
+            }
+          },
+          "citationDensity": {
+            "low": {
+              "n": 5,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 2,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.6576280471103807
+                ]
+              },
+              "aiRecall": {
+                "count": 2,
+                "n": 3,
+                "rate": 0.6666666666666666,
+                "wilson95": [
+                  0.2076549551264879,
+                  0.9385096847238394
+                ]
+              },
+              "uncertainRate": {
+                "count": 1,
+                "n": 5,
+                "rate": 0.2,
+                "wilson95": [
+                  0.03622316096978745,
+                  0.6244717358814613
+                ]
+              }
+            },
+            "high": {
+              "n": 1,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "aiRecall": {
+                "count": 1,
+                "n": 1,
+                "rate": 1.0,
+                "wilson95": [
+                  0.20654329147389294,
+                  1
+                ]
+              },
+              "uncertainRate": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              }
+            },
+            "medium": {
+              "n": 1,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "aiRecall": {
+                "count": 1,
+                "n": 1,
+                "rate": 1.0,
+                "wilson95": [
+                  0.20654329147389294,
+                  1
+                ]
+              },
+              "uncertainRate": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              }
+            }
+          },
+          "generatorFamily": {
+            "unknown": {
+              "n": 2,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 2,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.6576280471103807
+                ]
+              },
+              "aiRecall": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "uncertainRate": {
+                "count": 0,
+                "n": 2,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.6576280471103807
+                ]
+              }
+            },
+            "manual-synthetic": {
+              "n": 3,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "aiRecall": {
+                "count": 2,
+                "n": 3,
+                "rate": 0.6666666666666666,
+                "wilson95": [
+                  0.2076549551264879,
+                  0.9385096847238394
+                ]
+              },
+              "uncertainRate": {
+                "count": 1,
+                "n": 3,
+                "rate": 0.3333333333333333,
+                "wilson95": [
+                  0.0614903152761605,
+                  0.7923450448735121
+                ]
+              }
+            },
+            "qwen3-0.6b": {
+              "n": 2,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "aiRecall": {
+                "count": 2,
+                "n": 2,
+                "rate": 1.0,
+                "wilson95": [
+                  0.34237195288961925,
+                  1
+                ]
+              },
+              "uncertainRate": {
+                "count": 0,
+                "n": 2,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.6576280471103807
+                ]
+              }
+            }
+          }
+        },
+        "calibration": {
+          "domain": {
+            "medicine": {
+              "n": 1,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              },
+              "aiRecall": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "uncertainRate": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              }
+            },
+            "health-sciences": {
+              "n": 1,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "aiRecall": {
+                "count": 1,
+                "n": 1,
+                "rate": 1.0,
+                "wilson95": [
+                  0.20654329147389294,
+                  1
+                ]
+              },
+              "uncertainRate": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              }
+            },
+            "nursing": {
+              "n": 1,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "aiRecall": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              },
+              "uncertainRate": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              }
+            },
+            "health": {
+              "n": 1,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "aiRecall": {
+                "count": 1,
+                "n": 1,
+                "rate": 1.0,
+                "wilson95": [
+                  0.20654329147389294,
+                  1
+                ]
+              },
+              "uncertainRate": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              }
+            },
+            "general": {
+              "n": 1,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "aiRecall": {
+                "count": 1,
+                "n": 1,
+                "rate": 1.0,
+                "wilson95": [
+                  0.20654329147389294,
+                  1
+                ]
+              },
+              "uncertainRate": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              }
+            }
+          },
+          "citationDensity": {
+            "low": {
+              "n": 5,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              },
+              "aiRecall": {
+                "count": 3,
+                "n": 4,
+                "rate": 0.75,
+                "wilson95": [
+                  0.3006360524426366,
+                  0.9544139373553637
+                ]
+              },
+              "uncertainRate": {
+                "count": 0,
+                "n": 5,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.43449149475208104
+                ]
+              }
+            }
+          },
+          "generatorFamily": {
+            "unknown": {
+              "n": 1,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              },
+              "aiRecall": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "uncertainRate": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              }
+            },
+            "manual-synthetic": {
+              "n": 2,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "aiRecall": {
+                "count": 1,
+                "n": 2,
+                "rate": 0.5,
+                "wilson95": [
+                  0.09452865480086614,
+                  0.9054713451991339
+                ]
+              },
+              "uncertainRate": {
+                "count": 0,
+                "n": 2,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.6576280471103807
+                ]
+              }
+            },
+            "qwen3-0.6b": {
+              "n": 2,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "aiRecall": {
+                "count": 2,
+                "n": 2,
+                "rate": 1.0,
+                "wilson95": [
+                  0.34237195288961925,
+                  1
+                ]
+              },
+              "uncertainRate": {
+                "count": 0,
+                "n": 2,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.6576280471103807
+                ]
+              }
+            }
+          }
+        },
+        "heldout": {
+          "domain": {
+            "general-academic": {
+              "n": 2,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 2,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.6576280471103807
+                ]
+              },
+              "aiRecall": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "uncertainRate": {
+                "count": 0,
+                "n": 2,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.6576280471103807
+                ]
+              }
+            },
+            "health-sciences": {
+              "n": 2,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "aiRecall": {
+                "count": 1,
+                "n": 2,
+                "rate": 0.5,
+                "wilson95": [
+                  0.09452865480086614,
+                  0.9054713451991339
+                ]
+              },
+              "uncertainRate": {
+                "count": 1,
+                "n": 2,
+                "rate": 0.5,
+                "wilson95": [
+                  0.09452865480086614,
+                  0.9054713451991339
+                ]
+              }
+            },
+            "health": {
+              "n": 1,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "aiRecall": {
+                "count": 1,
+                "n": 1,
+                "rate": 1.0,
+                "wilson95": [
+                  0.20654329147389294,
+                  1
+                ]
+              },
+              "uncertainRate": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              }
+            },
+            "research": {
+              "n": 1,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "aiRecall": {
+                "count": 1,
+                "n": 1,
+                "rate": 1.0,
+                "wilson95": [
+                  0.20654329147389294,
+                  1
+                ]
+              },
+              "uncertainRate": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              }
+            },
+            "general": {
+              "n": 1,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "aiRecall": {
+                "count": 1,
+                "n": 1,
+                "rate": 1.0,
+                "wilson95": [
+                  0.20654329147389294,
+                  1
+                ]
+              },
+              "uncertainRate": {
+                "count": 0,
+                "n": 1,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.7934567085261071
+                ]
+              }
+            }
+          },
+          "citationDensity": {
+            "low": {
+              "n": 7,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 2,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.6576280471103807
+                ]
+              },
+              "aiRecall": {
+                "count": 4,
+                "n": 5,
+                "rate": 0.8,
+                "wilson95": [
+                  0.3755282641185388,
+                  0.9637768390302125
+                ]
+              },
+              "uncertainRate": {
+                "count": 1,
+                "n": 7,
+                "rate": 0.14285714285714285,
+                "wilson95": [
+                  0.02567895594897479,
+                  0.51313450331903
+                ]
+              }
+            }
+          },
+          "generatorFamily": {
+            "unknown": {
+              "n": 2,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 2,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.6576280471103807
+                ]
+              },
+              "aiRecall": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "uncertainRate": {
+                "count": 0,
+                "n": 2,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.6576280471103807
+                ]
+              }
+            },
+            "manual-synthetic": {
+              "n": 2,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "aiRecall": {
+                "count": 1,
+                "n": 2,
+                "rate": 0.5,
+                "wilson95": [
+                  0.09452865480086614,
+                  0.9054713451991339
+                ]
+              },
+              "uncertainRate": {
+                "count": 1,
+                "n": 2,
+                "rate": 0.5,
+                "wilson95": [
+                  0.09452865480086614,
+                  0.9054713451991339
+                ]
+              }
+            },
+            "smolllm2-360m": {
+              "n": 3,
+              "falsePositiveRate": {
+                "count": 0,
+                "n": 0,
+                "rate": null,
+                "wilson95": null
+              },
+              "aiRecall": {
+                "count": 3,
+                "n": 3,
+                "rate": 1.0,
+                "wilson95": [
+                  0.43849391955098227,
+                  1
+                ]
+              },
+              "uncertainRate": {
+                "count": 0,
+                "n": 3,
+                "rate": 0.0,
+                "wilson95": [
+                  0,
+                  0.5615060804490177
+                ]
+              }
+            }
+          }
+        }
+      },
+      "perCaseHeldout": [
+        {
+          "id": "pd-human-darwin-1",
+          "label": "human",
+          "score": 0.0077483332715928555,
+          "verdict": "human",
+          "domain": "general-academic",
+          "generatorFamily": null
+        },
+        {
+          "id": "pd-human-education-1",
+          "label": "human",
+          "score": 0.29844972491264343,
+          "verdict": "human",
+          "domain": "general-academic",
+          "generatorFamily": null
+        },
+        {
+          "id": "synth-ai-stats-1",
+          "label": "ai",
+          "score": 0.7982863783836365,
+          "verdict": "uncertain",
+          "domain": "health-sciences",
+          "generatorFamily": "manual-synthetic"
+        },
+        {
+          "id": "synth-ai-short-1",
+          "label": "ai",
+          "score": 0.9923413991928101,
+          "verdict": "ai",
+          "domain": "health-sciences",
+          "generatorFamily": "manual-synthetic"
+        },
+        {
+          "id": "edited-ai-rct-1",
+          "label": "edited",
+          "score": 0.5171540379524231,
+          "verdict": "human",
+          "domain": "health-sciences",
+          "generatorFamily": "manual-synthetic"
+        },
+        {
+          "id": "mixed-darwin-ai-1",
+          "label": "mixed",
+          "score": 0.7481064200401306,
+          "verdict": "uncertain",
+          "domain": "general-academic",
+          "generatorFamily": null
+        },
+        {
+          "id": "gen-smolllm2-360m-health-policy-2",
+          "label": "ai",
+          "score": 0.9994117021560669,
+          "verdict": "ai",
+          "domain": "health",
+          "generatorFamily": "smolllm2-360m"
+        },
+        {
+          "id": "gen-smolllm2-360m-research-methods-3",
+          "label": "ai",
+          "score": 0.9999560117721558,
+          "verdict": "ai",
+          "domain": "research",
+          "generatorFamily": "smolllm2-360m"
+        },
+        {
+          "id": "gen-smolllm2-360m-general-academic-4",
+          "label": "ai",
+          "score": 0.9999527931213379,
+          "verdict": "ai",
+          "domain": "general",
+          "generatorFamily": "smolllm2-360m"
+        }
+      ]
+    }
+  ],
+  "promotion": {
+    "baselineAIRecallOnHeldout": 0.6
+  },
+  "notice": "Calibration thresholds fitted on calibration split; all metrics on held-out split are primary. Small corpus; intervals are wide."
+}

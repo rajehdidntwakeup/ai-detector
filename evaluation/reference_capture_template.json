@@ -1,0 +1,46 @@
+{
+  "captureId": "manual-YYYY-MM-DD-NN",
+  "observationType": "observed",
+  "capturedAt": "REPLACE with timestamp including timezone offset, e.g. 2026-10-29T15:04:05+02:00",
+  "transport": "browser-network",
+  "source": {
+    "url": "https://www.turnitindetector.ai/",
+    "frontendJsSha256": "REPLACE with SHA-256 of the frontend bundle actually served, or null",
+    "frontendJsLength": null,
+    "pageNumber": null
+  },
+  "request": {
+    "endpoint": "/bff/detect",
+    "editorText": null,
+    "submittedText": "REPLACE: the exact text in the POST body, or the editor text if using browser-clipboard",
+    "submittedTextSha256": "REPLACE with SHA-256 (UTF-8) of submittedText, or let the importer recompute it",
+    "truncationObserved": null,
+    "notes": "Describe how the text was obtained: DevTools copy or editor copy. automation of the reference site is prohibited by its terms; this record supports only manual checks."
+  },
+  "responseState": {
+    "status": 200,
+    "success": true,
+    "dataPresent": true,
+    "fields": { "aiConfidence": null, "humanRate": null },
+    "raw": {},
+    "returnedText": null,
+    "sentences": [],
+    "elapsedMs": null
+  },
+  "display": {
+    "aiPercent": null,
+    "humanPercent": null,
+    "mixedPercent": null,
+    "verdict": null,
+    "sentenceHighlights": null,
+    "badgeNotes": ""
+  },
+  "uiState": "success",
+  "sanitization": {
+    "acknowledged": true,
+    "removedFields": []
+  },
+  "unresolved": [],
+  "notes": "",
+  "protocolVersion": "1"
+}

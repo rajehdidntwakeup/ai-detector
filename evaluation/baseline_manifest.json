@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "kind": "baseline",
+  "recordedAt": "2026-10-28T19:58:12Z",
+  "detector": {
+    "id": "rasbt/ai-text-detector-distilbert",
+    "revision": "66e301801e7057ec118553b8c7ba1b6abd7d2e6b",
+    "localDir": "models/distilbert-detector",
+    "baseModel": "distilbert/distilbert-base-uncased",
+    "trainingDataset": "rasbt/human-vs-ai-50k",
+    "maxLength": 512,
+    "maxPositionEmbeddings": 512,
+    "labelMapping": {
+      "human": 0,
+      "ai": 1
+    },
+    "id2label": {
+      "0": "HUMAN",
+      "1": "AI"
+    },
+    "publisherDecisionThreshold": 0.5,
+    "calibration": "temperature scaling",
+    "temperature": 1.2900265218781632,
+    "modelFiles": {
+      "model.safetensors": {
+        "sha256": "b463f86f0d63bd20d60655ccae2e57c96f88e2fc06d2a07150bbd44f689b12bb",
+        "bytes": 267832560
+      },
+      "tokenizer.json": {
+        "sha256": "435667fab0c06c165b1283ecb422497c37124f2d6a35b2ac73dc876332fc9518",
+        "bytes": 711494
+      },
+      "tokenizer_config.json": {
+        "sha256": "e1c2a61a99bda00f6c55303a210b30e2f92dcf8b555e215812e2eb583e177ffd",
+        "bytes": 351
+      },
+      "config.json": {
+        "sha256": "1fc83b8a47c2f0303a28bb5f25160db676a1453fbd8602ef31260bab98bcfe76",
+        "bytes": 766
+      },
+      "detector-config.json": {
+        "sha256": "ed0ce136e5daeb439f8c4472fc02a402d6fcc297ce186ebd65e9b49930d72fd1",
+        "bytes": 587
+      }
+    }
+  },
+  "appInference": {
+    "maxWords": 2000,
+    "maxCharacters": 50000,
+    "leaningThresholds": {
+      "human": "<=0.35",
+      "uncertain": "0.35..0.65",
+      "ai": ">=0.65"
+    },
+    "passageSpanLimit": 80,
+    "maxTokensPerWindow": 512,
+    "specialTokensAdded": true,
+    "windowOverlap": false,
+    "aggregation": "token-weighted mean of document windows; passage scores computed separately",
+    "inputNormalization": "strip whitespace; require >=10 characters, alphabetic character, <=maxWords and <=maxCharacters",
+    "batchSize": 4,
+    "torchThreads": "max(1, min(4, cpu_count // 2))"
+  },
+  "runtime": {
+    "python": "3.13.1",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "transformers": "4.57.3",
+    "torch": "2.9.1+cpu",
+    "safetensors": "0.8.0",
+    "huggingface_hub": "0.36.0"
+  },
+  "baselineResult": "evaluation/results/baseline.json",
+  "note": "Baseline manifest for rollback and paired comparisons. No thresholds or model behavior changed."
+}

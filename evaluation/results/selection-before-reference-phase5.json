@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "decision": "retain_baseline",
+  "reasons": [
+    "Retain the corrected original detector; no replacement is promoted.",
+    "Previous baseline and Qwen comparisons used incorrect special/readout token construction and cannot support a selection decision.",
+    "Previous memory values measured Python allocations, not total process RAM; old RAM disqualification claims are withdrawn.",
+    "Only 28 screening documents are available, including five human controls with incomplete provenance; quality gates remain unverified."
+  ],
+  "promotionGate": {
+    "academicAIRecallImprovementOverBaselinePoints": 10,
+    "maxHumanFalsePositiveRate": 0.05,
+    "maxFPIncreaseOverBaselinePoints": 0.02,
+    "warmP95SecondsFor400Words": 10,
+    "peakRAMGb": 8
+  },
+  "calibrationArtifact": null,
+  "baselineThresholds": {
+    "human": 0.35,
+    "uncertain": "0.35..0.65",
+    "ai": 0.65
+  },
+  "selectedEngine": {
+    "id": "rasbt/ai-text-detector-distilbert",
+    "revision": "66e301801e7057ec118553b8c7ba1b6abd7d2e6b"
+  },
+  "nextSteps": [
+    "Use the corrected schema-2 screening reports; their small corpus does not justify promotion or production thresholds.",
+    "Verify human controls and expand to the planned screening corpus before any promotion decision.",
+    "Measure the specified 400-word and long-document workloads; do not infer them from short samples.",
+    "Keep candidate testing in the CLI until an explicit browser integration is implemented."
+  ],
+  "status": "provisional_pending_verified_corpus_and_workload_benchmarks",
+  "screeningArtifacts": {
+    "comparison": "evaluation/results/compare-corrected-2026-10-29.json",
+    "calibration": "evaluation/results/calibrate-corrected-2026-10-29.json",
+    "appliedToBrowser": false
+  },
+  "supersededCalibrationArtifact": "evaluation/results/calibrate-all-four.json"
+}

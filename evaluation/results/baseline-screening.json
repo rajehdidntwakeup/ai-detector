@@ -1,0 +1,294 @@
+{
+  "schemaVersion": 1,
+  "engine": {
+    "id": "rasbt/ai-text-detector-distilbert",
+    "revision": "66e301801e7057ec118553b8c7ba1b6abd7d2e6b",
+    "offline": true
+  },
+  "python": "3.13.1",
+  "transformers": "4.57.3",
+  "torch": "2.9.1+cpu",
+  "manifestSha256": "2bc8ea7e1096a72cffe7d358edd6d6b0371cca4b5b7c1be234dfae05e82d3838",
+  "offlineVerified": true,
+  "loadMs": 4926,
+  "rows": [
+    {
+      "id": "known-ai-1",
+      "label": "ai",
+      "split": "regression",
+      "group": "assistant-writing-experiments-2026-10-28",
+      "sha256": "be843da2a984a02de81c42ed6382340af2dc1c58fd67da6563051c2b2f7a7abc",
+      "score": 0.9950856566429138,
+      "verdict": "ai",
+      "words": 172,
+      "durationMs": 538
+    },
+    {
+      "id": "known-ai-2",
+      "label": "ai",
+      "split": "regression",
+      "group": "assistant-writing-experiments-2026-10-28",
+      "sha256": "148a899956b45873b385d33a47f4a491671749c63240ebfc2284d5cf5fcec1b5",
+      "score": 0.035372018814086914,
+      "verdict": "human",
+      "words": 140,
+      "durationMs": 448
+    },
+    {
+      "id": "known-ai-3",
+      "label": "ai",
+      "split": "regression",
+      "group": "assistant-writing-experiments-2026-10-28",
+      "sha256": "6e7445c1a4d1ecb2717421589b14c93f93bd4076357353a873748fca6f3bc643",
+      "score": 0.9694412350654602,
+      "verdict": "ai",
+      "words": 137,
+      "durationMs": 475
+    },
+    {
+      "id": "pd-human-nightingale-1",
+      "label": "human",
+      "split": "development",
+      "group": "public-domain-human-academic-2026-10",
+      "sha256": "0c3f9d87391d3be96662c7e256b265c79a04ed1596612ce57c4336eb356fb084",
+      "score": 0.012822343036532402,
+      "verdict": "human",
+      "words": 168,
+      "durationMs": 470
+    },
+    {
+      "id": "pd-human-osler-1",
+      "label": "human",
+      "split": "development",
+      "group": "public-domain-human-academic-2026-10",
+      "sha256": "d310675d3eccaba917c768464ec4e34b7be420fd7328308757aa1515504d03f1",
+      "score": 0.9871609210968018,
+      "verdict": "ai",
+      "words": 137,
+      "durationMs": 440
+    },
+    {
+      "id": "pd-human-darwin-1",
+      "label": "human",
+      "split": "development",
+      "group": "public-domain-human-academic-2026-10",
+      "sha256": "47893d1a15375e7128ff0eabe6f8d14aa7c640467289cc7490b9dc1747ec4031",
+      "score": 0.0006163024227134883,
+      "verdict": "human",
+      "words": 154,
+      "durationMs": 387
+    },
+    {
+      "id": "synth-ai-nursing-1",
+      "label": "ai",
+      "split": "development",
+      "group": "synthetic-ai-academic-2026-10",
+      "sha256": "1a6e8a285c1d11d30e235e90aeb288021347b6a350e2dba0433ee04be10cbbc3",
+      "score": 0.9999417066574097,
+      "verdict": "ai",
+      "words": 125,
+      "durationMs": 419
+    },
+    {
+      "id": "synth-ai-health-ethics-1",
+      "label": "ai",
+      "split": "development",
+      "group": "synthetic-ai-academic-2026-10",
+      "sha256": "4cb9228b43af48d8674408f454b3c48902d20c38cd838ec7328ca9fc1303d336",
+      "score": 0.9999406337738037,
+      "verdict": "ai",
+      "words": 127,
+      "durationMs": 448
+    },
+    {
+      "id": "synth-ai-stats-1",
+      "label": "ai",
+      "split": "development",
+      "group": "synthetic-ai-academic-2026-10",
+      "sha256": "e5a4a72a9c3cc0fdcaa11da9f07e89900d2e9ad2b136b5b44c972bd078c7cd5f",
+      "score": 0.9999401569366455,
+      "verdict": "ai",
+      "words": 124,
+      "durationMs": 406
+    },
+    {
+      "id": "synth-ai-lit-review-1",
+      "label": "ai",
+      "split": "development",
+      "group": "synthetic-ai-academic-2026-10",
+      "sha256": "1542a901cf13e7f6bea9e261aada22d65654462fbf3ea94de1a99e7eeeebffeb",
+      "score": 0.14679774641990662,
+      "verdict": "human",
+      "words": 118,
+      "durationMs": 431
+    },
+    {
+      "id": "synth-ai-non-native-1",
+      "label": "ai",
+      "split": "development",
+      "group": "synthetic-ai-academic-2026-10",
+      "sha256": "a064d4a97d0c31aaeb4517a75499a6ffe589f538ad00b992a67e118766f89a82",
+      "score": 0.02172762155532837,
+      "verdict": "human",
+      "words": 110,
+      "durationMs": 325
+    },
+    {
+      "id": "synth-ai-short-1",
+      "label": "ai",
+      "split": "development",
+      "group": "synthetic-ai-academic-2026-10",
+      "sha256": "2e58c0ada57ba5c33aef1d4a869e9f0f9b3b91177bfb9a620ffbaf1e91a19d66",
+      "score": 0.9996778964996338,
+      "verdict": "ai",
+      "words": 35,
+      "durationMs": 73
+    },
+    {
+      "id": "synth-ai-long-1",
+      "label": "ai",
+      "split": "development",
+      "group": "synthetic-ai-academic-2026-10",
+      "sha256": "e65f8831dab5e14d500da589bfd3ae0e300e11f2fd5c26f953e3c8c732b8c737",
+      "score": 0.999940037727356,
+      "verdict": "ai",
+      "words": 202,
+      "durationMs": 694
+    },
+    {
+      "id": "edited-ai-handoff-1",
+      "label": "edited",
+      "split": "development",
+      "group": "edited-ai-academic-2026-10",
+      "sha256": "413f692032c2d3913b2ffcffaa16de121a798d1611c215a6fcedaa40292fff38",
+      "score": 0.002282816218212247,
+      "verdict": "human",
+      "words": 124,
+      "durationMs": 402
+    },
+    {
+      "id": "edited-ai-consent-1",
+      "label": "edited",
+      "split": "development",
+      "group": "edited-ai-academic-2026-10",
+      "sha256": "a6ff722f9720d4b8ac416c4beec62d2161479c9a29cc405214841dedebd3ec7e",
+      "score": 0.012942055240273476,
+      "verdict": "human",
+      "words": 105,
+      "durationMs": 358
+    },
+    {
+      "id": "edited-ai-rct-1",
+      "label": "edited",
+      "split": "development",
+      "group": "edited-ai-academic-2026-10",
+      "sha256": "9b8ee317fe09236b44e5159524179d5c85c0121f8b5fe69cd210fcc4ae2ac8ac",
+      "score": 0.18168391287326813,
+      "verdict": "human",
+      "words": 106,
+      "durationMs": 316
+    },
+    {
+      "id": "mixed-nightingale-ai-1",
+      "label": "mixed",
+      "split": "development",
+      "group": "mixed-human-ai-academic-2026-10",
+      "sha256": "fc7a62835c4744cadd28b1194d97f30c586a6b91a56e8fb9d96d0dae672f222e",
+      "score": 0.07988324761390686,
+      "verdict": "human",
+      "words": 153,
+      "durationMs": 450
+    },
+    {
+      "id": "mixed-osler-ai-1",
+      "label": "mixed",
+      "split": "development",
+      "group": "mixed-human-ai-academic-2026-10",
+      "sha256": "5a269653146f8daf5f67acb52183ef4a29f1615ee13e44b9722171623095c4e8",
+      "score": 0.988768458366394,
+      "verdict": "ai",
+      "words": 118,
+      "durationMs": 392
+    },
+    {
+      "id": "mixed-darwin-ai-1",
+      "label": "mixed",
+      "split": "development",
+      "group": "mixed-human-ai-academic-2026-10",
+      "sha256": "2b16d3ba38618cb082fadc4e6a54dd2eae37a532d07f1de180b9507b84bd629d",
+      "score": 0.0022609203588217497,
+      "verdict": "human",
+      "words": 117,
+      "durationMs": 302
+    }
+  ],
+  "bySplit": {
+    "development": {
+      "n": 16,
+      "labels": {
+        "human": 3,
+        "ai": 7,
+        "edited": 3,
+        "mixed": 3
+      },
+      "falsePositiveRate": {
+        "count": 1,
+        "n": 3,
+        "rate": 0.3333333333333333,
+        "wilson95": [
+          0.0614903152761605,
+          0.7923450448735121
+        ]
+      },
+      "aiRecall": {
+        "count": 5,
+        "n": 7,
+        "rate": 0.7142857142857143,
+        "wilson95": [
+          0.35892909014821267,
+          0.9177828342909844
+        ]
+      },
+      "uncertainRate": {
+        "count": 0,
+        "n": 16,
+        "rate": 0.0,
+        "wilson95": [
+          0,
+          0.19361341827271994
+        ]
+      }
+    },
+    "regression": {
+      "n": 3,
+      "labels": {
+        "ai": 3
+      },
+      "falsePositiveRate": {
+        "count": 0,
+        "n": 0,
+        "rate": null,
+        "wilson95": null
+      },
+      "aiRecall": {
+        "count": 2,
+        "n": 3,
+        "rate": 0.6666666666666666,
+        "wilson95": [
+          0.2076549551264879,
+          0.9385096847238394
+        ]
+      },
+      "uncertainRate": {
+        "count": 0,
+        "n": 3,
+        "rate": 0.0,
+        "wilson95": [
+          0,
+          0.5615060804490177
+        ]
+      }
+    }
+  },
+  "notice": "Regression data is not a held-out accuracy benchmark. Missing classes have null metrics. Mixed/edited samples are excluded from binary recall and false positives."
+}

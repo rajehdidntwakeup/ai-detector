@@ -1,0 +1,71 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Local Lens detector disagreement registry entry",
+  "description": "Records score disagreements between the local detector and an external reference. Unknown-authorship cases stay outside the accuracy corpus.",
+  "type": "object",
+  "required": [
+    "caseId", "timestamp", "textSha256", "local", "reference",
+    "provenanceStatus", "evidenceStatus", "comparisonProtocolVersion"
+  ],
+  "properties": {
+    "caseId": {
+      "type": "string",
+      "description": "Stable identifier for this disagreement case."
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When the disagreement was first recorded."
+    },
+    "textSha256": {
+      "type": ["string", "null"],
+      "description": "SHA-256 of the exact text, when available. Null only when the exact text is pending."
+    },
+    "exactText": {
+      "type": ["string", "null"],
+      "description": "The exact input text. Keep out of public fixtures and external uploads by default."
+    },
+    "local": {
+      "type": "object",
+      "required": ["engineId", "revision", "score", "verdict"],
+      "properties": {
+        "engineId": { "type": "string" },
+        "revision": { "type": "string" },
+        "baselineManifestId": { "type": "string" },
+        "score": { "type": "number" },
+        "displayedScore": { "type": ["number", "string", "null"] },
+        "verdict": { "enum": ["ai", "human", "uncertain"] },
+        "runId": { "type": ["string", "null"] }
+      }
+    },
+    "reference": {
+      "type": "object",
+      "required": ["service", "pageOrEndpoint", "field", "score"],
+      "properties": {
+        "service": { "type": "string" },
+        "pageOrEndpoint": { "type": "string" },
+        "field": { "type": "string" },
+        "score": { "type": ["number", "string"] },
+        "scale": { "enum": ["percent", "probability", "unknown"], "default": "unknown" },
+        "direction": { "enum": ["ai-likeness", "human-likeness", "unknown"], "default": "unknown" },
+        "verdict": { "enum": ["ai", "human", "uncertain", null] },
+        "checkedAt": { "type": ["string", "null"] },
+        "repeatability": { "type": ["string", "null"] }
+      }
+    },
+    "provenanceStatus": {
+      "enum": ["unknown", "author_claimed_human", "author_claimed_ai", "verified_human", "verified_ai", "mixed"],
+      "description": "What is known about the true authorship of the text."
+    },
+    "evidenceStatus": {
+      "enum": ["recorded", "reproduced_locally", "audited_reference_scale", "resolved", "disputed"],
+      "description": "Stage of verification for this disagreement."
+    },
+    "notes": {
+      "type": "string"
+    },
+    "comparisonProtocolVersion": {
+      "type": "string"
+    }
+  }
+}

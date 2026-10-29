@@ -1,0 +1,159 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Local Lens turnitindetector.ai capture record",
+  "description": "One sanitized observation of the reference website's detector behavior, or one explicitly synthetic locally constructed fixture. Exact texts may be included only when the record is synthetic or the text is public/approved; observed captures with real documents belong in the ignored local captures directory only.",
+  "type": "object",
+  "required": [
+    "captureId", "observationType", "capturedAt", "transport", "source",
+    "request", "responseState", "protocolVersion"
+  ],
+  "properties": {
+    "captureId": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]{1,63}$",
+      "description": "Stable identifier unique within this registry, e.g. manual-2026-10-29-01 or synthetic-minlen-9-utf16."
+    },
+    "observationType": {
+      "enum": ["observed", "reported", "static", "hypothesis", "synthetic"],
+      "description": "observed/reported come from real reference access (manual browser work, never automation); static from public frontend code; hypothesis is an unverified claim; synthetic is locally constructed and never evidence of server behavior."
+    },
+    "capturedAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Capture time including timezone offset or Z."
+    },
+    "transport": {
+      "enum": ["browser-network", "browser-clipboard", "manual-notes", "synthetic-construct", "fixture"],
+      "description": "How this information was obtained. browser-network means a sanitized manual DevTools capture."
+    },
+    "source": {
+      "type": "object",
+      "required": ["url"],
+      "properties": {
+        "url": { "type": "string", "description": "Page or endpoint the observation came from." },
+        "frontendJsSha256": {
+          "type": ["string", "null"],
+          "pattern": "^[0-9a-f]{64}$",
+          "description": "SHA-256 of the decoded frontend bundle the static observation cites, when applicable."
+        },
+        "frontendJsLength": { "type": ["integer", "null"] },
+        "pageNumber": { "type": ["integer", "null"], "description": "Saved-capture page number in the ignored raw directory, when kept." }
+      }
+    },
+    "request": {
+      "type": "object",
+      "required": ["endpoint", "submittedText"],
+      "properties": {
+        "endpoint": { "type": "string", "description": "Path actually requested, e.g. /bff/detect." },
+        "editorText": {
+          "type": ["string", "null"],
+          "description": "The full text present in the editor, if different from what was submitted. Null when unavailable or withheld; never a truncated copy."
+        },
+        "submittedText": {
+          "type": "string",
+          "description": "The exact text in the POST body, to the best of the capture's fidelity (browser-clipboard uses the editor's copied text and must say so)."
+        },
+        "editorTextSha256": { "type": ["string", "null"], "pattern": "^[0-9a-f]{64}$" },
+        "submittedTextSha256": {
+          "type": ["string", "null"],
+          "pattern": "^[0-9a-f]{64}$",
+          "description": "SHA-256 (UTF-8) of the exact submitted text. Separate from every other hash."
+        },
+        "submittedUtf16Units": {
+          "type": ["integer", "null"],
+          "description": "JavaScript string length of the submitted text; boundaries the site checks against (10 minimum, ~2000-word prefix)."
+        },
+        "submittedWordCount": {
+          "type": ["integer", "null"],
+          "description": "Whitespace-delimited word count as the frontend counts them."
+        },
+        "truncationObserved": {
+          "type": ["boolean", "null"],
+          "description": "True when the submitted text is a strict prefix of the editor text."
+        },
+        "notes": { "type": "string" }
+      }
+    },
+    "responseState": {
+      "type": "object",
+      "required": ["status"],
+      "properties": {
+        "status": { "type": ["integer", "null"], "description": "HTTP status; null when not captured." },
+        "success": { "type": ["boolean", "null"], "description": "truthy success field read by the frontend." },
+        "dataPresent": { "type": ["boolean", "null"], "description": "truthy data container read by the frontend." },
+        "fields": {
+          "type": "object",
+          "description": "Raw values exactly as returned; keep types as received (string numbers stay strings).",
+          "properties": {
+            "aiConfidence": { "type": ["number", "string", "boolean", "null", "array", "object"] },
+            "humanRate": { "type": ["number", "string", "boolean", "null", "array", "object"] },
+            "aiRateResult": { "type": ["number", "string", "boolean", "null", "array", "object"] }
+          }
+        },
+        "raw": {
+          "type": "object",
+          "description": "The complete sanitized response envelope (success, data with originalContent/sentences/class_probabilities/aiRateResult). Must contain no session secrets."
+        },
+        "returnedText": {
+          "type": ["string", "null"],
+          "description": "The text echoed back by the service (data.originalContent when present)."
+        },
+        "returnedTextSha256": { "type": ["string", "null"], "pattern": "^[0-9a-f]{64}$" },
+        "sentences": {
+          "type": "array",
+          "description": "Returned sentence records in order: sentence text plus its raw class_probabilities object.",
+          "items": {
+            "type": "object",
+            "required": ["text"],
+            "properties": {
+              "text": { "type": "string" },
+              "classProbabilities": {
+                "type": ["object", "null"],
+                "description": "Raw class_probabilities exactly as returned, including absent keys."
+              }
+            }
+          }
+        },
+        "elapsedMs": { "type": ["integer", "null"] }
+      }
+    },
+    "display": {
+      "type": "object",
+      "description": "What the rendered page showed, independent of the wire values.",
+      "properties": {
+        "aiPercent": { "type": ["number", "null"] },
+        "humanPercent": { "type": ["number", "null"] },
+        "mixedPercent": { "type": ["number", "null"] },
+        "verdict": { "enum": ["ai", "human", "mixed", null] },
+        "sentenceHighlights": {
+          "type": ["array", "null"],
+          "description": "Highlighted class per sentence in document order: ai, mixed, human, or unscored.",
+          "items": { "enum": ["ai", "mixed", "human", "unscored"] }
+        },
+        "badgeNotes": { "type": "string", "description": "Named-detector badge values shown, e.g. Originality AI label reading WinstonAI." }
+      }
+    },
+    "uiState": {
+      "enum": ["idle", "checking", "success", "cleared-after-result", "repeat-check", "error", "unknown", null],
+      "description": "Interface state observed during this check."
+    },
+    "sanitization": {
+      "type": "object",
+      "required": ["acknowledged"],
+      "properties": {
+        "acknowledged": {
+          "const": true,
+          "description": "Confirms cookies, authorization values, session identifiers, and unrelated personal data were removed or never captured."
+        },
+        "removedFields": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "unresolved": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Questions this capture still leaves open, so missing evidence stays explicit."
+    },
+    "notes": { "type": "string" },
+    "protocolVersion": { "type": "string", "description": "Behavior-capture protocol version, currently 1." }
+  }
+}

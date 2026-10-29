@@ -1,0 +1,13 @@
+.venv/
+.claude/
+.docs/
+models/
+.runtime/
+__pycache__/
+*.pyc
+.idea/
+evaluation/reference_scores.jsonl
+evaluation/reference_captures.jsonl
+# Raw reference-site captures: sanitized registry values only; real documents stay local.
+reference-raw/
+

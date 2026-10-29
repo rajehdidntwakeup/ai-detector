@@ -1,0 +1,1179 @@
+{
+  "schemaVersion": 1,
+  "python": "3.13.1",
+  "transformers": "5.14.1",
+  "torch": "2.9.1+cpu",
+  "manifestSha256": "e174e50401d0b9551b2b584059595567779d754d92c660d4a1ef1c65cf7683f1",
+  "offlineVerified": true,
+  "engines": [
+    {
+      "engine": {
+        "id": "rasbt/ai-text-detector-distilbert",
+        "revision": "66e301801e7057ec118553b8c7ba1b6abd7d2e6b",
+        "offline": true
+      },
+      "loadMs": 20315,
+      "peakLoadMemoryKb": 139827,
+      "peakInferenceMemoryKb": 138664,
+      "rows": [
+        {
+          "id": "known-ai-1",
+          "label": "ai",
+          "split": "regression",
+          "group": "assistant-writing-experiments-2026-10-28",
+          "sha256": "be843da2a984a02de81c42ed6382340af2dc1c58fd67da6563051c2b2f7a7abc",
+          "score": 0.9128991365432739,
+          "verdict": "ai",
+          "durationMs": 130
+        },
+        {
+          "id": "known-ai-2",
+          "label": "ai",
+          "split": "regression",
+          "group": "assistant-writing-experiments-2026-10-28",
+          "sha256": "148a899956b45873b385d33a47f4a491671749c63240ebfc2284d5cf5fcec1b5",
+          "score": 0.002395184012129903,
+          "verdict": "human",
+          "durationMs": 112
+        },
+        {
+          "id": "known-ai-3",
+          "label": "ai",
+          "split": "regression",
+          "group": "assistant-writing-experiments-2026-10-28",
+          "sha256": "6e7445c1a4d1ecb2717421589b14c93f93bd4076357353a873748fca6f3bc643",
+          "score": 0.09324650466442108,
+          "verdict": "human",
+          "durationMs": 114
+        },
+        {
+          "id": "pd-human-nightingale-1",
+          "label": "human",
+          "split": "development",
+          "group": "public-domain-human-academic-2026-10-dev",
+          "sha256": "0c3f9d87391d3be96662c7e256b265c79a04ed1596612ce57c4336eb356fb084",
+          "score": 0.0005514559452421963,
+          "verdict": "human",
+          "durationMs": 107
+        },
+        {
+          "id": "pd-human-osler-1",
+          "label": "human",
+          "split": "calibration",
+          "group": "public-domain-human-academic-2026-10-cal",
+          "sha256": "d310675d3eccaba917c768464ec4e34b7be420fd7328308757aa1515504d03f1",
+          "score": 0.013511450961232185,
+          "verdict": "human",
+          "durationMs": 126
+        },
+        {
+          "id": "pd-human-darwin-1",
+          "label": "human",
+          "split": "heldout",
+          "group": "public-domain-human-academic-2026-10-held",
+          "sha256": "47893d1a15375e7128ff0eabe6f8d14aa7c640467289cc7490b9dc1747ec4031",
+          "score": 0.00043367609032429755,
+          "verdict": "human",
+          "durationMs": 119
+        },
+        {
+          "id": "pd-human-education-1",
+          "label": "human",
+          "split": "heldout",
+          "group": "public-domain-human-academic-2026-10-held",
+          "sha256": "1bd027a15483cbebc11644d2ccb52e14e72f43b726a483ab03872625d109eaf3",
+          "score": 0.0005449064774438739,
+          "verdict": "human",
+          "durationMs": 112
+        },
+        {
+          "id": "pd-human-economics-1",
+          "label": "human",
+          "split": "development",
+          "group": "public-domain-human-academic-2026-10-dev",
+          "sha256": "72413a648ed3f5f50d20c176b5af28fa0709525f8e5af98d8e634ee90b4234d2",
+          "score": 0.0005564806633628905,
+          "verdict": "human",
+          "durationMs": 117
+        },
+        {
+          "id": "synth-ai-nursing-1",
+          "label": "ai",
+          "split": "development",
+          "group": "synthetic-ai-academic-2026-10-dev",
+          "sha256": "1a6e8a285c1d11d30e235e90aeb288021347b6a350e2dba0433ee04be10cbbc3",
+          "score": 0.9999399185180664,
+          "verdict": "ai",
+          "durationMs": 116
+        },
+        {
+          "id": "synth-ai-health-ethics-1",
+          "label": "ai",
+          "split": "calibration",
+          "group": "synthetic-ai-academic-2026-10-cal",
+          "sha256": "4cb9228b43af48d8674408f454b3c48902d20c38cd838ec7328ca9fc1303d336",
+          "score": 0.9999343156814575,
+          "verdict": "ai",
+          "durationMs": 104
+        },
+        {
+          "id": "synth-ai-stats-1",
+          "label": "ai",
+          "split": "heldout",
+          "group": "synthetic-ai-academic-2026-10-held",
+          "sha256": "e5a4a72a9c3cc0fdcaa11da9f07e89900d2e9ad2b136b5b44c972bd078c7cd5f",
+          "score": 0.9999388456344604,
+          "verdict": "ai",
+          "durationMs": 111
+        },
+        {
+          "id": "synth-ai-lit-review-1",
+          "label": "ai",
+          "split": "development",
+          "group": "synthetic-ai-academic-2026-10-dev",
+          "sha256": "1542a901cf13e7f6bea9e261aada22d65654462fbf3ea94de1a99e7eeeebffeb",
+          "score": 0.9415504336357117,
+          "verdict": "ai",
+          "durationMs": 108
+        },
+        {
+          "id": "synth-ai-non-native-1",
+          "label": "ai",
+          "split": "calibration",
+          "group": "synthetic-ai-academic-2026-10-cal",
+          "sha256": "a064d4a97d0c31aaeb4517a75499a6ffe589f538ad00b992a67e118766f89a82",
+          "score": 0.0042197080329060555,
+          "verdict": "human",
+          "durationMs": 89
+        },
+        {
+          "id": "synth-ai-short-1",
+          "label": "ai",
+          "split": "heldout",
+          "group": "synthetic-ai-academic-2026-10-held",
+          "sha256": "2e58c0ada57ba5c33aef1d4a869e9f0f9b3b91177bfb9a620ffbaf1e91a19d66",
+          "score": 0.9482790231704712,
+          "verdict": "ai",
+          "durationMs": 37
+        },
+        {
+          "id": "synth-ai-long-1",
+          "label": "ai",
+          "split": "development",
+          "group": "synthetic-ai-academic-2026-10-dev",
+          "sha256": "e65f8831dab5e14d500da589bfd3ae0e300e11f2fd5c26f953e3c8c732b8c737",
+          "score": 0.9999339580535889,
+          "verdict": "ai",
+          "durationMs": 170
+        },
+        {
+          "id": "edited-ai-handoff-1",
+          "label": "edited",
+          "split": "development",
+          "group": "edited-ai-academic-2026-10-dev",
+          "sha256": "413f692032c2d3913b2ffcffaa16de121a798d1611c215a6fcedaa40292fff38",
+          "score": 0.009865167550742626,
+          "verdict": "human",
+          "durationMs": 161
+        },
+        {
+          "id": "edited-ai-consent-1",
+          "label": "edited",
+          "split": "calibration",
+          "group": "edited-ai-academic-2026-10-cal",
+          "sha256": "a6ff722f9720d4b8ac416c4beec62d2161479c9a29cc405214841dedebd3ec7e",
+          "score": 0.0027107580099254847,
+          "verdict": "human",
+          "durationMs": 100
+        },
+        {
+          "id": "edited-ai-rct-1",
+          "label": "edited",
+          "split": "heldout",
+          "group": "edited-ai-academic-2026-10-held",
+          "sha256": "9b8ee317fe09236b44e5159524179d5c85c0121f8b5fe69cd210fcc4ae2ac8ac",
+          "score": 0.006228223908692598,
+          "verdict": "human",
+          "durationMs": 89
+        },
+        {
+          "id": "mixed-nightingale-ai-1",
+          "label": "mixed",
+          "split": "development",
+          "group": "mixed-human-ai-academic-2026-10-dev",
+          "sha256": "fc7a62835c4744cadd28b1194d97f30c586a6b91a56e8fb9d96d0dae672f222e",
+          "score": 0.0011127287289127707,
+          "verdict": "human",
+          "durationMs": 115
+        },
+        {
+          "id": "mixed-osler-ai-1",
+          "label": "mixed",
+          "split": "calibration",
+          "group": "mixed-human-ai-academic-2026-10-cal",
+          "sha256": "5a269653146f8daf5f67acb52183ef4a29f1615ee13e44b9722171623095c4e8",
+          "score": 0.020748542621731758,
+          "verdict": "human",
+          "durationMs": 111
+        },
+        {
+          "id": "mixed-darwin-ai-1",
+          "label": "mixed",
+          "split": "heldout",
+          "group": "mixed-human-ai-academic-2026-10-held",
+          "sha256": "2b16d3ba38618cb082fadc4e6a54dd2eae37a532d07f1de180b9507b84bd629d",
+          "score": 0.0006487271748483181,
+          "verdict": "human",
+          "durationMs": 90
+        },
+        {
+          "id": "gen-qwen3-0.6b-nursing-education-1",
+          "label": "ai",
+          "split": "development",
+          "group": "generated-qwen-academic-2026-10-dev",
+          "sha256": "b345082e326b93f53fb752a08265a13f997c0d8b1cc8f6dc1ed5be8d43f2e791",
+          "score": 0.03290364518761635,
+          "verdict": "human",
+          "durationMs": 93
+        },
+        {
+          "id": "gen-qwen3-0.6b-research-methods-3",
+          "label": "ai",
+          "split": "development",
+          "group": "generated-qwen-academic-2026-10-dev",
+          "sha256": "a00bb5087184fff07bcc24b1d14a0eab872dec43fd8a445f61fd50e58a8d9ca0",
+          "score": 0.003974670544266701,
+          "verdict": "human",
+          "durationMs": 175
+        },
+        {
+          "id": "gen-qwen3-0.6b-health-policy-2",
+          "label": "ai",
+          "split": "calibration",
+          "group": "generated-qwen-academic-2026-10-cal",
+          "sha256": "2f5fdba168e4c7281964ab54699bdeb8494ee951ff330ae1fe280d577e2dd9a4",
+          "score": 0.2805343568325043,
+          "verdict": "human",
+          "durationMs": 170
+        },
+        {
+          "id": "gen-qwen3-0.6b-general-academic-4",
+          "label": "ai",
+          "split": "calibration",
+          "group": "generated-qwen-academic-2026-10-cal",
+          "sha256": "5a1cbb9f09773ab8d12de8b19a5d8089f9ee287fcd1fd46b4fb19b3bbb607de6",
+          "score": 0.9831433892250061,
+          "verdict": "ai",
+          "durationMs": 95
+        },
+        {
+          "id": "gen-smolllm2-360m-health-policy-2",
+          "label": "ai",
+          "split": "heldout",
+          "group": "generated-smol-academic-2026-10-held",
+          "sha256": "3493d9ea36622c1b47b8ace1c4ab05ba851f8b03950acf13dda57529c9b5a717",
+          "score": 0.0006846661563031375,
+          "verdict": "human",
+          "durationMs": 55
+        },
+        {
+          "id": "gen-smolllm2-360m-research-methods-3",
+          "label": "ai",
+          "split": "heldout",
+          "group": "generated-smol-academic-2026-10-held",
+          "sha256": "8d4411dcce1ac917101269468030475a41655ed4b6fc44a6f41fa9ae8e70b1f8",
+          "score": 0.017450200393795967,
+          "verdict": "human",
+          "durationMs": 104
+        },
+        {
+          "id": "gen-smolllm2-360m-general-academic-4",
+          "label": "ai",
+          "split": "heldout",
+          "group": "generated-smol-academic-2026-10-held",
+          "sha256": "1218a40d6f689268a8c4ca952ead36a8b83f1db2055b4f47468a1704eb734242",
+          "score": 0.031001603230834007,
+          "verdict": "human",
+          "durationMs": 57
+        }
+      ]
+    },
+    {
+      "engine": {
+        "id": "rasbt/ai-text-detector-modernbert",
+        "revision": "a6efd4bf6ecd852f332b2569ae0f98cae13b7985",
+        "offline": true
+      },
+      "loadMs": 1479,
+      "peakLoadMemoryKb": 24128,
+      "peakInferenceMemoryKb": 1316,
+      "rows": [
+        {
+          "id": "known-ai-1",
+          "label": "ai",
+          "split": "regression",
+          "group": "assistant-writing-experiments-2026-10-28",
+          "sha256": "be843da2a984a02de81c42ed6382340af2dc1c58fd67da6563051c2b2f7a7abc",
+          "score": 0.9992102384567261,
+          "verdict": "ai",
+          "durationMs": 3055
+        },
+        {
+          "id": "known-ai-2",
+          "label": "ai",
+          "split": "regression",
+          "group": "assistant-writing-experiments-2026-10-28",
+          "sha256": "148a899956b45873b385d33a47f4a491671749c63240ebfc2284d5cf5fcec1b5",
+          "score": 0.032081443816423416,
+          "verdict": "human",
+          "durationMs": 2589
+        },
+        {
+          "id": "known-ai-3",
+          "label": "ai",
+          "split": "regression",
+          "group": "assistant-writing-experiments-2026-10-28",
+          "sha256": "6e7445c1a4d1ecb2717421589b14c93f93bd4076357353a873748fca6f3bc643",
+          "score": 0.1543423980474472,
+          "verdict": "human",
+          "durationMs": 2741
+        },
+        {
+          "id": "pd-human-nightingale-1",
+          "label": "human",
+          "split": "development",
+          "group": "public-domain-human-academic-2026-10-dev",
+          "sha256": "0c3f9d87391d3be96662c7e256b265c79a04ed1596612ce57c4336eb356fb084",
+          "score": 0.0005093288491480052,
+          "verdict": "human",
+          "durationMs": 2933
+        },
+        {
+          "id": "pd-human-osler-1",
+          "label": "human",
+          "split": "calibration",
+          "group": "public-domain-human-academic-2026-10-cal",
+          "sha256": "d310675d3eccaba917c768464ec4e34b7be420fd7328308757aa1515504d03f1",
+          "score": 0.20193879306316376,
+          "verdict": "human",
+          "durationMs": 2852
+        },
+        {
+          "id": "pd-human-darwin-1",
+          "label": "human",
+          "split": "heldout",
+          "group": "public-domain-human-academic-2026-10-held",
+          "sha256": "47893d1a15375e7128ff0eabe6f8d14aa7c640467289cc7490b9dc1747ec4031",
+          "score": 0.0012999287573620677,
+          "verdict": "human",
+          "durationMs": 2845
+        },
+        {
+          "id": "pd-human-education-1",
+          "label": "human",
+          "split": "heldout",
+          "group": "public-domain-human-academic-2026-10-held",
+          "sha256": "1bd027a15483cbebc11644d2ccb52e14e72f43b726a483ab03872625d109eaf3",
+          "score": 0.00034868167131207883,
+          "verdict": "human",
+          "durationMs": 2368
+        },
+        {
+          "id": "pd-human-economics-1",
+          "label": "human",
+          "split": "development",
+          "group": "public-domain-human-academic-2026-10-dev",
+          "sha256": "72413a648ed3f5f50d20c176b5af28fa0709525f8e5af98d8e634ee90b4234d2",
+          "score": 0.0005856276256963611,
+          "verdict": "human",
+          "durationMs": 2897
+        },
+        {
+          "id": "synth-ai-nursing-1",
+          "label": "ai",
+          "split": "development",
+          "group": "synthetic-ai-academic-2026-10-dev",
+          "sha256": "1a6e8a285c1d11d30e235e90aeb288021347b6a350e2dba0433ee04be10cbbc3",
+          "score": 0.9994483590126038,
+          "verdict": "ai",
+          "durationMs": 3207
+        },
+        {
+          "id": "synth-ai-health-ethics-1",
+          "label": "ai",
+          "split": "calibration",
+          "group": "synthetic-ai-academic-2026-10-cal",
+          "sha256": "4cb9228b43af48d8674408f454b3c48902d20c38cd838ec7328ca9fc1303d336",
+          "score": 0.9995105266571045,
+          "verdict": "ai",
+          "durationMs": 3367
+        },
+        {
+          "id": "synth-ai-stats-1",
+          "label": "ai",
+          "split": "heldout",
+          "group": "synthetic-ai-academic-2026-10-held",
+          "sha256": "e5a4a72a9c3cc0fdcaa11da9f07e89900d2e9ad2b136b5b44c972bd078c7cd5f",
+          "score": 0.9994804263114929,
+          "verdict": "ai",
+          "durationMs": 3332
+        },
+        {
+          "id": "synth-ai-lit-review-1",
+          "label": "ai",
+          "split": "development",
+          "group": "synthetic-ai-academic-2026-10-dev",
+          "sha256": "1542a901cf13e7f6bea9e261aada22d65654462fbf3ea94de1a99e7eeeebffeb",
+          "score": 0.6171834468841553,
+          "verdict": "uncertain",
+          "durationMs": 3156
+        },
+        {
+          "id": "synth-ai-non-native-1",
+          "label": "ai",
+          "split": "calibration",
+          "group": "synthetic-ai-academic-2026-10-cal",
+          "sha256": "a064d4a97d0c31aaeb4517a75499a6ffe589f538ad00b992a67e118766f89a82",
+          "score": 0.0017879316583275795,
+          "verdict": "human",
+          "durationMs": 2458
+        },
+        {
+          "id": "synth-ai-short-1",
+          "label": "ai",
+          "split": "heldout",
+          "group": "synthetic-ai-academic-2026-10-held",
+          "sha256": "2e58c0ada57ba5c33aef1d4a869e9f0f9b3b91177bfb9a620ffbaf1e91a19d66",
+          "score": 0.9956231713294983,
+          "verdict": "ai",
+          "durationMs": 892
+        },
+        {
+          "id": "synth-ai-long-1",
+          "label": "ai",
+          "split": "development",
+          "group": "synthetic-ai-academic-2026-10-dev",
+          "sha256": "e65f8831dab5e14d500da589bfd3ae0e300e11f2fd5c26f953e3c8c732b8c737",
+          "score": 0.9996223449707031,
+          "verdict": "ai",
+          "durationMs": 5053
+        },
+        {
+          "id": "edited-ai-handoff-1",
+          "label": "edited",
+          "split": "development",
+          "group": "edited-ai-academic-2026-10-dev",
+          "sha256": "413f692032c2d3913b2ffcffaa16de121a798d1611c215a6fcedaa40292fff38",
+          "score": 0.009113787673413754,
+          "verdict": "human",
+          "durationMs": 2939
+        },
+        {
+          "id": "edited-ai-consent-1",
+          "label": "edited",
+          "split": "calibration",
+          "group": "edited-ai-academic-2026-10-cal",
+          "sha256": "a6ff722f9720d4b8ac416c4beec62d2161479c9a29cc405214841dedebd3ec7e",
+          "score": 0.9294877052307129,
+          "verdict": "ai",
+          "durationMs": 2492
+        },
+        {
+          "id": "edited-ai-rct-1",
+          "label": "edited",
+          "split": "heldout",
+          "group": "edited-ai-academic-2026-10-held",
+          "sha256": "9b8ee317fe09236b44e5159524179d5c85c0121f8b5fe69cd210fcc4ae2ac8ac",
+          "score": 0.9878656268119812,
+          "verdict": "ai",
+          "durationMs": 2505
+        },
+        {
+          "id": "mixed-nightingale-ai-1",
+          "label": "mixed",
+          "split": "development",
+          "group": "mixed-human-ai-academic-2026-10-dev",
+          "sha256": "fc7a62835c4744cadd28b1194d97f30c586a6b91a56e8fb9d96d0dae672f222e",
+          "score": 0.9807464480400085,
+          "verdict": "ai",
+          "durationMs": 3625
+        },
+        {
+          "id": "mixed-osler-ai-1",
+          "label": "mixed",
+          "split": "calibration",
+          "group": "mixed-human-ai-academic-2026-10-cal",
+          "sha256": "5a269653146f8daf5f67acb52183ef4a29f1615ee13e44b9722171623095c4e8",
+          "score": 0.9992992877960205,
+          "verdict": "ai",
+          "durationMs": 3106
+        },
+        {
+          "id": "mixed-darwin-ai-1",
+          "label": "mixed",
+          "split": "heldout",
+          "group": "mixed-human-ai-academic-2026-10-held",
+          "sha256": "2b16d3ba38618cb082fadc4e6a54dd2eae37a532d07f1de180b9507b84bd629d",
+          "score": 0.9926689863204956,
+          "verdict": "ai",
+          "durationMs": 2685
+        },
+        {
+          "id": "gen-qwen3-0.6b-nursing-education-1",
+          "label": "ai",
+          "split": "development",
+          "group": "generated-qwen-academic-2026-10-dev",
+          "sha256": "b345082e326b93f53fb752a08265a13f997c0d8b1cc8f6dc1ed5be8d43f2e791",
+          "score": 0.9953081011772156,
+          "verdict": "ai",
+          "durationMs": 2705
+        },
+        {
+          "id": "gen-qwen3-0.6b-research-methods-3",
+          "label": "ai",
+          "split": "development",
+          "group": "generated-qwen-academic-2026-10-dev",
+          "sha256": "a00bb5087184fff07bcc24b1d14a0eab872dec43fd8a445f61fd50e58a8d9ca0",
+          "score": 0.07385241240262985,
+          "verdict": "human",
+          "durationMs": 5798
+        },
+        {
+          "id": "gen-qwen3-0.6b-health-policy-2",
+          "label": "ai",
+          "split": "calibration",
+          "group": "generated-qwen-academic-2026-10-cal",
+          "sha256": "2f5fdba168e4c7281964ab54699bdeb8494ee951ff330ae1fe280d577e2dd9a4",
+          "score": 0.9976838827133179,
+          "verdict": "ai",
+          "durationMs": 5635
+        },
+        {
+          "id": "gen-qwen3-0.6b-general-academic-4",
+          "label": "ai",
+          "split": "calibration",
+          "group": "generated-qwen-academic-2026-10-cal",
+          "sha256": "5a1cbb9f09773ab8d12de8b19a5d8089f9ee287fcd1fd46b4fb19b3bbb607de6",
+          "score": 0.7612841129302979,
+          "verdict": "ai",
+          "durationMs": 2514
+        },
+        {
+          "id": "gen-smolllm2-360m-health-policy-2",
+          "label": "ai",
+          "split": "heldout",
+          "group": "generated-smol-academic-2026-10-held",
+          "sha256": "3493d9ea36622c1b47b8ace1c4ab05ba851f8b03950acf13dda57529c9b5a717",
+          "score": 0.7460070848464966,
+          "verdict": "ai",
+          "durationMs": 1108
+        },
+        {
+          "id": "gen-smolllm2-360m-research-methods-3",
+          "label": "ai",
+          "split": "heldout",
+          "group": "generated-smol-academic-2026-10-held",
+          "sha256": "8d4411dcce1ac917101269468030475a41655ed4b6fc44a6f41fa9ae8e70b1f8",
+          "score": 0.9555396437644958,
+          "verdict": "ai",
+          "durationMs": 3121
+        },
+        {
+          "id": "gen-smolllm2-360m-general-academic-4",
+          "label": "ai",
+          "split": "heldout",
+          "group": "generated-smol-academic-2026-10-held",
+          "sha256": "1218a40d6f689268a8c4ca952ead36a8b83f1db2055b4f47468a1704eb734242",
+          "score": 0.02604958973824978,
+          "verdict": "human",
+          "durationMs": 1349
+        }
+      ]
+    },
+    {
+      "engine": {
+        "id": "desklib/ai-text-detector-v1.01",
+        "revision": "5fdea974cd4287c61674951ec78803aa274e2fb7",
+        "offline": true
+      },
+      "loadMs": 21617,
+      "peakLoadMemoryKb": 75017,
+      "peakInferenceMemoryKb": 21037,
+      "rows": [
+        {
+          "id": "known-ai-1",
+          "label": "ai",
+          "split": "regression",
+          "group": "assistant-writing-experiments-2026-10-28",
+          "sha256": "be843da2a984a02de81c42ed6382340af2dc1c58fd67da6563051c2b2f7a7abc",
+          "score": 0.9999929666519165,
+          "verdict": "ai",
+          "durationMs": 6732
+        },
+        {
+          "id": "known-ai-2",
+          "label": "ai",
+          "split": "regression",
+          "group": "assistant-writing-experiments-2026-10-28",
+          "sha256": "148a899956b45873b385d33a47f4a491671749c63240ebfc2284d5cf5fcec1b5",
+          "score": 0.43136993050575256,
+          "verdict": "uncertain",
+          "durationMs": 6685
+        },
+        {
+          "id": "known-ai-3",
+          "label": "ai",
+          "split": "regression",
+          "group": "assistant-writing-experiments-2026-10-28",
+          "sha256": "6e7445c1a4d1ecb2717421589b14c93f93bd4076357353a873748fca6f3bc643",
+          "score": 0.9988358616828918,
+          "verdict": "ai",
+          "durationMs": 6636
+        },
+        {
+          "id": "pd-human-nightingale-1",
+          "label": "human",
+          "split": "development",
+          "group": "public-domain-human-academic-2026-10-dev",
+          "sha256": "0c3f9d87391d3be96662c7e256b265c79a04ed1596612ce57c4336eb356fb084",
+          "score": 0.15680494904518127,
+          "verdict": "human",
+          "durationMs": 6605
+        },
+        {
+          "id": "pd-human-osler-1",
+          "label": "human",
+          "split": "calibration",
+          "group": "public-domain-human-academic-2026-10-cal",
+          "sha256": "d310675d3eccaba917c768464ec4e34b7be420fd7328308757aa1515504d03f1",
+          "score": 0.2917182743549347,
+          "verdict": "human",
+          "durationMs": 6681
+        },
+        {
+          "id": "pd-human-darwin-1",
+          "label": "human",
+          "split": "heldout",
+          "group": "public-domain-human-academic-2026-10-held",
+          "sha256": "47893d1a15375e7128ff0eabe6f8d14aa7c640467289cc7490b9dc1747ec4031",
+          "score": 0.0077483332715928555,
+          "verdict": "human",
+          "durationMs": 6720
+        },
+        {
+          "id": "pd-human-education-1",
+          "label": "human",
+          "split": "heldout",
+          "group": "public-domain-human-academic-2026-10-held",
+          "sha256": "1bd027a15483cbebc11644d2ccb52e14e72f43b726a483ab03872625d109eaf3",
+          "score": 0.29844972491264343,
+          "verdict": "human",
+          "durationMs": 8001
+        },
+        {
+          "id": "pd-human-economics-1",
+          "label": "human",
+          "split": "development",
+          "group": "public-domain-human-academic-2026-10-dev",
+          "sha256": "72413a648ed3f5f50d20c176b5af28fa0709525f8e5af98d8e634ee90b4234d2",
+          "score": 0.023708892986178398,
+          "verdict": "human",
+          "durationMs": 7070
+        },
+        {
+          "id": "synth-ai-nursing-1",
+          "label": "ai",
+          "split": "development",
+          "group": "synthetic-ai-academic-2026-10-dev",
+          "sha256": "1a6e8a285c1d11d30e235e90aeb288021347b6a350e2dba0433ee04be10cbbc3",
+          "score": 0.9464799165725708,
+          "verdict": "ai",
+          "durationMs": 5980
+        },
+        {
+          "id": "synth-ai-health-ethics-1",
+          "label": "ai",
+          "split": "calibration",
+          "group": "synthetic-ai-academic-2026-10-cal",
+          "sha256": "4cb9228b43af48d8674408f454b3c48902d20c38cd838ec7328ca9fc1303d336",
+          "score": 0.9904311299324036,
+          "verdict": "ai",
+          "durationMs": 5799
+        },
+        {
+          "id": "synth-ai-stats-1",
+          "label": "ai",
+          "split": "heldout",
+          "group": "synthetic-ai-academic-2026-10-held",
+          "sha256": "e5a4a72a9c3cc0fdcaa11da9f07e89900d2e9ad2b136b5b44c972bd078c7cd5f",
+          "score": 0.7982863783836365,
+          "verdict": "ai",
+          "durationMs": 5695
+        },
+        {
+          "id": "synth-ai-lit-review-1",
+          "label": "ai",
+          "split": "development",
+          "group": "synthetic-ai-academic-2026-10-dev",
+          "sha256": "1542a901cf13e7f6bea9e261aada22d65654462fbf3ea94de1a99e7eeeebffeb",
+          "score": 0.9973512887954712,
+          "verdict": "ai",
+          "durationMs": 6251
+        },
+        {
+          "id": "synth-ai-non-native-1",
+          "label": "ai",
+          "split": "calibration",
+          "group": "synthetic-ai-academic-2026-10-cal",
+          "sha256": "a064d4a97d0c31aaeb4517a75499a6ffe589f538ad00b992a67e118766f89a82",
+          "score": 0.26929765939712524,
+          "verdict": "human",
+          "durationMs": 6478
+        },
+        {
+          "id": "synth-ai-short-1",
+          "label": "ai",
+          "split": "heldout",
+          "group": "synthetic-ai-academic-2026-10-held",
+          "sha256": "2e58c0ada57ba5c33aef1d4a869e9f0f9b3b91177bfb9a620ffbaf1e91a19d66",
+          "score": 0.9923413991928101,
+          "verdict": "ai",
+          "durationMs": 6684
+        },
+        {
+          "id": "synth-ai-long-1",
+          "label": "ai",
+          "split": "development",
+          "group": "synthetic-ai-academic-2026-10-dev",
+          "sha256": "e65f8831dab5e14d500da589bfd3ae0e300e11f2fd5c26f953e3c8c732b8c737",
+          "score": 0.9693809747695923,
+          "verdict": "ai",
+          "durationMs": 6694
+        },
+        {
+          "id": "edited-ai-handoff-1",
+          "label": "edited",
+          "split": "development",
+          "group": "edited-ai-academic-2026-10-dev",
+          "sha256": "413f692032c2d3913b2ffcffaa16de121a798d1611c215a6fcedaa40292fff38",
+          "score": 0.07001562416553497,
+          "verdict": "human",
+          "durationMs": 6778
+        },
+        {
+          "id": "edited-ai-consent-1",
+          "label": "edited",
+          "split": "calibration",
+          "group": "edited-ai-academic-2026-10-cal",
+          "sha256": "a6ff722f9720d4b8ac416c4beec62d2161479c9a29cc405214841dedebd3ec7e",
+          "score": 0.9686927795410156,
+          "verdict": "ai",
+          "durationMs": 6657
+        },
+        {
+          "id": "edited-ai-rct-1",
+          "label": "edited",
+          "split": "heldout",
+          "group": "edited-ai-academic-2026-10-held",
+          "sha256": "9b8ee317fe09236b44e5159524179d5c85c0121f8b5fe69cd210fcc4ae2ac8ac",
+          "score": 0.5171540379524231,
+          "verdict": "uncertain",
+          "durationMs": 7527
+        },
+        {
+          "id": "mixed-nightingale-ai-1",
+          "label": "mixed",
+          "split": "development",
+          "group": "mixed-human-ai-academic-2026-10-dev",
+          "sha256": "fc7a62835c4744cadd28b1194d97f30c586a6b91a56e8fb9d96d0dae672f222e",
+          "score": 0.09750606119632721,
+          "verdict": "human",
+          "durationMs": 7108
+        },
+        {
+          "id": "mixed-osler-ai-1",
+          "label": "mixed",
+          "split": "calibration",
+          "group": "mixed-human-ai-academic-2026-10-cal",
+          "sha256": "5a269653146f8daf5f67acb52183ef4a29f1615ee13e44b9722171623095c4e8",
+          "score": 0.18063533306121826,
+          "verdict": "human",
+          "durationMs": 6745
+        },
+        {
+          "id": "mixed-darwin-ai-1",
+          "label": "mixed",
+          "split": "heldout",
+          "group": "mixed-human-ai-academic-2026-10-held",
+          "sha256": "2b16d3ba38618cb082fadc4e6a54dd2eae37a532d07f1de180b9507b84bd629d",
+          "score": 0.7481064200401306,
+          "verdict": "ai",
+          "durationMs": 6960
+        },
+        {
+          "id": "gen-qwen3-0.6b-nursing-education-1",
+          "label": "ai",
+          "split": "development",
+          "group": "generated-qwen-academic-2026-10-dev",
+          "sha256": "b345082e326b93f53fb752a08265a13f997c0d8b1cc8f6dc1ed5be8d43f2e791",
+          "score": 0.9999825954437256,
+          "verdict": "ai",
+          "durationMs": 6649
+        },
+        {
+          "id": "gen-qwen3-0.6b-research-methods-3",
+          "label": "ai",
+          "split": "development",
+          "group": "generated-qwen-academic-2026-10-dev",
+          "sha256": "a00bb5087184fff07bcc24b1d14a0eab872dec43fd8a445f61fd50e58a8d9ca0",
+          "score": 0.9999816417694092,
+          "verdict": "ai",
+          "durationMs": 7010
+        },
+        {
+          "id": "gen-qwen3-0.6b-health-policy-2",
+          "label": "ai",
+          "split": "calibration",
+          "group": "generated-qwen-academic-2026-10-cal",
+          "sha256": "2f5fdba168e4c7281964ab54699bdeb8494ee951ff330ae1fe280d577e2dd9a4",
+          "score": 0.9999958276748657,
+          "verdict": "ai",
+          "durationMs": 6602
+        },
+        {
+          "id": "gen-qwen3-0.6b-general-academic-4",
+          "label": "ai",
+          "split": "calibration",
+          "group": "generated-qwen-academic-2026-10-cal",
+          "sha256": "5a1cbb9f09773ab8d12de8b19a5d8089f9ee287fcd1fd46b4fb19b3bbb607de6",
+          "score": 0.9999896287918091,
+          "verdict": "ai",
+          "durationMs": 6556
+        },
+        {
+          "id": "gen-smolllm2-360m-health-policy-2",
+          "label": "ai",
+          "split": "heldout",
+          "group": "generated-smol-academic-2026-10-held",
+          "sha256": "3493d9ea36622c1b47b8ace1c4ab05ba851f8b03950acf13dda57529c9b5a717",
+          "score": 0.9994117021560669,
+          "verdict": "ai",
+          "durationMs": 6155
+        },
+        {
+          "id": "gen-smolllm2-360m-research-methods-3",
+          "label": "ai",
+          "split": "heldout",
+          "group": "generated-smol-academic-2026-10-held",
+          "sha256": "8d4411dcce1ac917101269468030475a41655ed4b6fc44a6f41fa9ae8e70b1f8",
+          "score": 0.9999560117721558,
+          "verdict": "ai",
+          "durationMs": 5703
+        },
+        {
+          "id": "gen-smolllm2-360m-general-academic-4",
+          "label": "ai",
+          "split": "heldout",
+          "group": "generated-smol-academic-2026-10-held",
+          "sha256": "1218a40d6f689268a8c4ca952ead36a8b83f1db2055b4f47468a1704eb734242",
+          "score": 0.9999527931213379,
+          "verdict": "ai",
+          "durationMs": 6528
+        }
+      ]
+    },
+    {
+      "engine": {
+        "id": "rasbt/ai-text-detector-qwen3-0.6b-variable",
+        "revision": "b08d92707d5de35a0b6ccf34e73461a4ab954a33",
+        "offline": true
+      },
+      "loadMs": 6241,
+      "peakLoadMemoryKb": 116253,
+      "peakInferenceMemoryKb": 42941,
+      "rows": [
+        {
+          "id": "known-ai-1",
+          "label": "ai",
+          "split": "regression",
+          "group": "assistant-writing-experiments-2026-10-28",
+          "sha256": "be843da2a984a02de81c42ed6382340af2dc1c58fd67da6563051c2b2f7a7abc",
+          "score": 0.9783640503883362,
+          "verdict": "ai",
+          "durationMs": 13347
+        },
+        {
+          "id": "known-ai-2",
+          "label": "ai",
+          "split": "regression",
+          "group": "assistant-writing-experiments-2026-10-28",
+          "sha256": "148a899956b45873b385d33a47f4a491671749c63240ebfc2284d5cf5fcec1b5",
+          "score": 0.17534899711608887,
+          "verdict": "human",
+          "durationMs": 10785
+        },
+        {
+          "id": "known-ai-3",
+          "label": "ai",
+          "split": "regression",
+          "group": "assistant-writing-experiments-2026-10-28",
+          "sha256": "6e7445c1a4d1ecb2717421589b14c93f93bd4076357353a873748fca6f3bc643",
+          "score": 0.9767881631851196,
+          "verdict": "ai",
+          "durationMs": 11343
+        },
+        {
+          "id": "pd-human-nightingale-1",
+          "label": "human",
+          "split": "development",
+          "group": "public-domain-human-academic-2026-10-dev",
+          "sha256": "0c3f9d87391d3be96662c7e256b265c79a04ed1596612ce57c4336eb356fb084",
+          "score": 0.0011890308232977986,
+          "verdict": "human",
+          "durationMs": 13198
+        },
+        {
+          "id": "pd-human-osler-1",
+          "label": "human",
+          "split": "calibration",
+          "group": "public-domain-human-academic-2026-10-cal",
+          "sha256": "d310675d3eccaba917c768464ec4e34b7be420fd7328308757aa1515504d03f1",
+          "score": 0.0070044356398284435,
+          "verdict": "human",
+          "durationMs": 16295
+        },
+        {
+          "id": "pd-human-darwin-1",
+          "label": "human",
+          "split": "heldout",
+          "group": "public-domain-human-academic-2026-10-held",
+          "sha256": "47893d1a15375e7128ff0eabe6f8d14aa7c640467289cc7490b9dc1747ec4031",
+          "score": 0.0006551051046699286,
+          "verdict": "human",
+          "durationMs": 10783
+        },
+        {
+          "id": "pd-human-education-1",
+          "label": "human",
+          "split": "heldout",
+          "group": "public-domain-human-academic-2026-10-held",
+          "sha256": "1bd027a15483cbebc11644d2ccb52e14e72f43b726a483ab03872625d109eaf3",
+          "score": 0.0026966172736138105,
+          "verdict": "human",
+          "durationMs": 9685
+        },
+        {
+          "id": "pd-human-economics-1",
+          "label": "human",
+          "split": "development",
+          "group": "public-domain-human-academic-2026-10-dev",
+          "sha256": "72413a648ed3f5f50d20c176b5af28fa0709525f8e5af98d8e634ee90b4234d2",
+          "score": 0.0010464794468134642,
+          "verdict": "human",
+          "durationMs": 10939
+        },
+        {
+          "id": "synth-ai-nursing-1",
+          "label": "ai",
+          "split": "development",
+          "group": "synthetic-ai-academic-2026-10-dev",
+          "sha256": "1a6e8a285c1d11d30e235e90aeb288021347b6a350e2dba0433ee04be10cbbc3",
+          "score": 0.9887352585792542,
+          "verdict": "ai",
+          "durationMs": 10388
+        },
+        {
+          "id": "synth-ai-health-ethics-1",
+          "label": "ai",
+          "split": "calibration",
+          "group": "synthetic-ai-academic-2026-10-cal",
+          "sha256": "4cb9228b43af48d8674408f454b3c48902d20c38cd838ec7328ca9fc1303d336",
+          "score": 0.9888532161712646,
+          "verdict": "ai",
+          "durationMs": 11056
+        },
+        {
+          "id": "synth-ai-stats-1",
+          "label": "ai",
+          "split": "heldout",
+          "group": "synthetic-ai-academic-2026-10-held",
+          "sha256": "e5a4a72a9c3cc0fdcaa11da9f07e89900d2e9ad2b136b5b44c972bd078c7cd5f",
+          "score": 0.9984973669052124,
+          "verdict": "ai",
+          "durationMs": 10587
+        },
+        {
+          "id": "synth-ai-lit-review-1",
+          "label": "ai",
+          "split": "development",
+          "group": "synthetic-ai-academic-2026-10-dev",
+          "sha256": "1542a901cf13e7f6bea9e261aada22d65654462fbf3ea94de1a99e7eeeebffeb",
+          "score": 0.14986903965473175,
+          "verdict": "human",
+          "durationMs": 12848
+        },
+        {
+          "id": "synth-ai-non-native-1",
+          "label": "ai",
+          "split": "calibration",
+          "group": "synthetic-ai-academic-2026-10-cal",
+          "sha256": "a064d4a97d0c31aaeb4517a75499a6ffe589f538ad00b992a67e118766f89a82",
+          "score": 0.007307166233658791,
+          "verdict": "human",
+          "durationMs": 8433
+        },
+        {
+          "id": "synth-ai-short-1",
+          "label": "ai",
+          "split": "heldout",
+          "group": "synthetic-ai-academic-2026-10-held",
+          "sha256": "2e58c0ada57ba5c33aef1d4a869e9f0f9b3b91177bfb9a620ffbaf1e91a19d66",
+          "score": 0.7467581629753113,
+          "verdict": "ai",
+          "durationMs": 2825
+        },
+        {
+          "id": "synth-ai-long-1",
+          "label": "ai",
+          "split": "development",
+          "group": "synthetic-ai-academic-2026-10-dev",
+          "sha256": "e65f8831dab5e14d500da589bfd3ae0e300e11f2fd5c26f953e3c8c732b8c737",
+          "score": 0.998274564743042,
+          "verdict": "ai",
+          "durationMs": 16204
+        },
+        {
+          "id": "edited-ai-handoff-1",
+          "label": "edited",
+          "split": "development",
+          "group": "edited-ai-academic-2026-10-dev",
+          "sha256": "413f692032c2d3913b2ffcffaa16de121a798d1611c215a6fcedaa40292fff38",
+          "score": 0.004167609382420778,
+          "verdict": "human",
+          "durationMs": 8528
+        },
+        {
+          "id": "edited-ai-consent-1",
+          "label": "edited",
+          "split": "calibration",
+          "group": "edited-ai-academic-2026-10-cal",
+          "sha256": "a6ff722f9720d4b8ac416c4beec62d2161479c9a29cc405214841dedebd3ec7e",
+          "score": 0.3861663341522217,
+          "verdict": "uncertain",
+          "durationMs": 7159
+        },
+        {
+          "id": "edited-ai-rct-1",
+          "label": "edited",
+          "split": "heldout",
+          "group": "edited-ai-academic-2026-10-held",
+          "sha256": "9b8ee317fe09236b44e5159524179d5c85c0121f8b5fe69cd210fcc4ae2ac8ac",
+          "score": 0.7457494735717773,
+          "verdict": "ai",
+          "durationMs": 6961
+        },
+        {
+          "id": "mixed-nightingale-ai-1",
+          "label": "mixed",
+          "split": "development",
+          "group": "mixed-human-ai-academic-2026-10-dev",
+          "sha256": "fc7a62835c4744cadd28b1194d97f30c586a6b91a56e8fb9d96d0dae672f222e",
+          "score": 0.4694075286388397,
+          "verdict": "uncertain",
+          "durationMs": 11177
+        },
+        {
+          "id": "mixed-osler-ai-1",
+          "label": "mixed",
+          "split": "calibration",
+          "group": "mixed-human-ai-academic-2026-10-cal",
+          "sha256": "5a269653146f8daf5f67acb52183ef4a29f1615ee13e44b9722171623095c4e8",
+          "score": 0.9348406195640564,
+          "verdict": "ai",
+          "durationMs": 10129
+        },
+        {
+          "id": "mixed-darwin-ai-1",
+          "label": "mixed",
+          "split": "heldout",
+          "group": "mixed-human-ai-academic-2026-10-held",
+          "sha256": "2b16d3ba38618cb082fadc4e6a54dd2eae37a532d07f1de180b9507b84bd629d",
+          "score": 0.004733308218419552,
+          "verdict": "human",
+          "durationMs": 9153
+        },
+        {
+          "id": "gen-qwen3-0.6b-nursing-education-1",
+          "label": "ai",
+          "split": "development",
+          "group": "generated-qwen-academic-2026-10-dev",
+          "sha256": "b345082e326b93f53fb752a08265a13f997c0d8b1cc8f6dc1ed5be8d43f2e791",
+          "score": 0.9980396628379822,
+          "verdict": "ai",
+          "durationMs": 9135
+        },
+        {
+          "id": "gen-qwen3-0.6b-research-methods-3",
+          "label": "ai",
+          "split": "development",
+          "group": "generated-qwen-academic-2026-10-dev",
+          "sha256": "a00bb5087184fff07bcc24b1d14a0eab872dec43fd8a445f61fd50e58a8d9ca0",
+          "score": 0.013902829959988594,
+          "verdict": "human",
+          "durationMs": 19546
+        },
+        {
+          "id": "gen-qwen3-0.6b-health-policy-2",
+          "label": "ai",
+          "split": "calibration",
+          "group": "generated-qwen-academic-2026-10-cal",
+          "sha256": "2f5fdba168e4c7281964ab54699bdeb8494ee951ff330ae1fe280d577e2dd9a4",
+          "score": 0.9998213648796082,
+          "verdict": "ai",
+          "durationMs": 18468
+        },
+        {
+          "id": "gen-qwen3-0.6b-general-academic-4",
+          "label": "ai",
+          "split": "calibration",
+          "group": "generated-qwen-academic-2026-10-cal",
+          "sha256": "5a1cbb9f09773ab8d12de8b19a5d8089f9ee287fcd1fd46b4fb19b3bbb607de6",
+          "score": 0.15076202154159546,
+          "verdict": "human",
+          "durationMs": 7883
+        },
+        {
+          "id": "gen-smolllm2-360m-health-policy-2",
+          "label": "ai",
+          "split": "heldout",
+          "group": "generated-smol-academic-2026-10-held",
+          "sha256": "3493d9ea36622c1b47b8ace1c4ab05ba851f8b03950acf13dda57529c9b5a717",
+          "score": 0.01806926541030407,
+          "verdict": "human",
+          "durationMs": 3657
+        },
+        {
+          "id": "gen-smolllm2-360m-research-methods-3",
+          "label": "ai",
+          "split": "heldout",
+          "group": "generated-smol-academic-2026-10-held",
+          "sha256": "8d4411dcce1ac917101269468030475a41655ed4b6fc44a6f41fa9ae8e70b1f8",
+          "score": 0.36369943618774414,
+          "verdict": "uncertain",
+          "durationMs": 9389
+        },
+        {
+          "id": "gen-smolllm2-360m-general-academic-4",
+          "label": "ai",
+          "split": "heldout",
+          "group": "generated-smol-academic-2026-10-held",
+          "sha256": "1218a40d6f689268a8c4ca952ead36a8b83f1db2055b4f47468a1704eb734242",
+          "score": 0.00174391467589885,
+          "verdict": "human",
+          "durationMs": 4126
+        }
+      ]
+    }
+  ],
+  "notice": "Comparison on limited screening data; no thresholds tuned. Passage-level scores not reported. Mixed/edited samples excluded from binary metrics."
+}

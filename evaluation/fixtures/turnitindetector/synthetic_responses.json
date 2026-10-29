@@ -1,0 +1,219 @@
+[
+  {
+    "id": "resp-synth-success-full",
+    "observationType": "synthetic",
+    "purpose": "Complete well-formed response with sentence records for display logic tests.",
+    "synthetic": true,
+    "status": 200,
+    "raw": {
+      "success": true,
+      "data": {
+        "originalContent": "The quick review covers eleven steady sentences of ordinary prose. It stays plain.",
+        "aiConfidence": 0.83,
+        "humanRate": 0.17,
+        "sentences": [
+          {
+            "sentence": "The quick review covers eleven steady sentences of ordinary prose.",
+            "class_probabilities": {
+              "ai": 0.9,
+              "mixed": 0.05,
+              "human": 0.05
+            }
+          },
+          {
+            "sentence": "It stays plain.",
+            "class_probabilities": {
+              "ai": 0.2,
+              "mixed": 0.1,
+              "human": 0.7
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "resp-synth-mixed-noncomplement",
+    "observationType": "synthetic",
+    "purpose": "aiConfidence + humanRate well away from 1: probes whether mixed is derived as a remainder.",
+    "synthetic": true,
+    "status": 200,
+    "raw": {
+      "success": true,
+      "data": {
+        "originalContent": "The quick review covers eleven steady sentences of ordinary prose. It stays plain.",
+        "aiConfidence": 0.6,
+        "humanRate": 0.25
+      }
+    }
+  },
+  {
+    "id": "resp-synth-missing-sentences",
+    "observationType": "synthetic",
+    "purpose": "Absent sentences field: highlighting must be optional, not assumed.",
+    "synthetic": true,
+    "status": 200,
+    "raw": {
+      "success": true,
+      "data": {
+        "originalContent": "The quick review covers eleven steady sentences of ordinary prose. It stays plain.",
+        "aiConfidence": 0.4,
+        "humanRate": 0.6
+      }
+    }
+  },
+  {
+    "id": "resp-synth-sentence-missing-class",
+    "observationType": "synthetic",
+    "purpose": "Sentence class_probabilities missing a key: probes the fallback/badge behavior for absent values.",
+    "synthetic": true,
+    "status": 200,
+    "raw": {
+      "success": true,
+      "data": {
+        "originalContent": "The quick review covers eleven steady sentences of ordinary prose. It stays plain.",
+        "aiConfidence": 0.7,
+        "humanRate": 0.3,
+        "sentences": [
+          {
+            "sentence": "Only one class is reported here.",
+            "class_probabilities": {
+              "ai": 1.0
+            }
+          },
+          {
+            "sentence": "This one reports none.",
+            "class_probabilities": {}
+          },
+          {
+            "sentence": "This one reports nothing at all."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "resp-synth-tie-document",
+    "observationType": "synthetic",
+    "purpose": "Document-level equal shares: observed rule prioritizes human, then mixed, then AI.",
+    "synthetic": true,
+    "status": 200,
+    "raw": {
+      "success": true,
+      "data": {
+        "originalContent": "The quick review covers eleven steady sentences of ordinary prose. It stays plain.",
+        "aiConfidence": 0.5,
+        "humanRate": 0.5
+      }
+    }
+  },
+  {
+    "id": "resp-synth-tie-sentence",
+    "observationType": "synthetic",
+    "purpose": "Sentence-level equal shares: observed rule prioritizes AI, then mixed, then human.",
+    "synthetic": true,
+    "status": 200,
+    "raw": {
+      "success": true,
+      "data": {
+        "originalContent": "The quick review covers eleven steady sentences of ordinary prose. It stays plain.",
+        "aiConfidence": 0.5,
+        "humanRate": 0.5,
+        "sentences": [
+          {
+            "sentence": "A tied sentence.",
+            "class_probabilities": {
+              "ai": 0.4,
+              "mixed": 0.4,
+              "human": 0.2
+            }
+          },
+          {
+            "sentence": "An unresolved tie.",
+            "class_probabilities": {
+              "ai": 0.5,
+              "mixed": 0.5
+            }
+          },
+          {
+            "sentence": "Another unresolved tie.",
+            "class_probabilities": {
+              "ai": 0.5,
+              "mixed": 0.5
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "resp-synth-string-number",
+    "observationType": "synthetic",
+    "purpose": "Scores returned as strings: probes type coercion before clamping/rounding.",
+    "synthetic": true,
+    "status": 200,
+    "raw": {
+      "success": true,
+      "data": {
+        "originalContent": "Text.",
+        "aiConfidence": "0.83",
+        "humanRate": "0.17"
+      }
+    }
+  },
+  {
+    "id": "resp-synth-out-of-range",
+    "observationType": "synthetic",
+    "purpose": "Values outside [0, 1]: probes the observed clamping step.",
+    "synthetic": true,
+    "status": 200,
+    "raw": {
+      "success": true,
+      "data": {
+        "originalContent": "Text.",
+        "aiConfidence": 1.4,
+        "humanRate": -0.4
+      }
+    }
+  },
+  {
+    "id": "resp-synth-failure-success-false",
+    "observationType": "synthetic",
+    "purpose": "success false with HTTP 200: local fixture for the failure state the frontend shows.",
+    "synthetic": true,
+    "status": 200,
+    "raw": {
+      "success": false,
+      "data": null
+    }
+  },
+  {
+    "id": "resp-synth-failure-http-error",
+    "observationType": "synthetic",
+    "purpose": "HTTP error status: local fixture for the failure presentation.",
+    "synthetic": true,
+    "status": 500,
+    "raw": {
+      "success": false
+    }
+  },
+  {
+    "id": "resp-synth-ai-rateresult",
+    "observationType": "synthetic",
+    "purpose": "aiRateResult object: exercises the named-detector badge rendering (labels remain research observations).",
+    "synthetic": true,
+    "status": 200,
+    "raw": {
+      "success": true,
+      "data": {
+        "originalContent": "Text.",
+        "aiConfidence": 0.66,
+        "humanRate": 0.34,
+        "aiRateResult": {
+          "GPTZero": 61.2,
+          "WinstonAI": 70.0
+        }
+      }
+    }
+  }
+]

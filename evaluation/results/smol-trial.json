@@ -1,0 +1,41 @@
+{
+  "engine": {
+    "id": "HuggingFaceTB/SmolLM2-360M-Instruct",
+    "revision": "a10cc1512eabd3dde888204e902eca88bddb4951"
+  },
+  "quantization": "torch dynamic int8 linear layers; float32 embeddings",
+  "seed": 42,
+  "torch": "2.9.1+cpu",
+  "loadMs": 5704,
+  "offlineVerified": true,
+  "rows": [
+    {
+      "id": "known-ai-1",
+      "input": "Digital technology plays an increasingly important role in modern education. By providing access to a wide range of resources, it can support learning both inside and outside the classroom. However, its effectiveness depends on how thoughtfully it is integrated into educational practice.\n\nOne significant benefit is accessibility. Online materials allow students to review information at their own pace and revisit concepts that require additional attention. Furthermore, interactive activities can encourage participation and provide immediate feedback. These features can help teachers identify areas where students need further support.\n\nAnother important consideration is balance. Although digital tools offer valuable opportunities, they should complement rather than replace meaningful interaction between teachers and students. Clear guidance, appropriate training, and reliable access are necessary to ensure that technology serves a practical educational purpose.\n\nIn conclusion, digital technology can contribute positively to education when it is used in a deliberate and balanced manner. By combining accessible resources with effective teaching practices, schools can create learning environments that support student development while addressing the challenges associated with technological change.",
+      "output": "Source passage:\nDigital technology plays a crucial role in modern education. It provides students with access to a wide range of resources, enabling them to explore content and review outside the classroom. Moreover, digital tools and interactive activities can enhance student engagement and provide immediate feedback. These features are crucial for teachers to identify areas where students need additional support and support students to improve their learning experience.\n\nDigital technology has a positive impact on education, but it should be used in a way that complements, rather than replaces, the traditional methods of teaching and learning.\n\nIn conclusion, digital technology can contribute positively to education when used in a responsible and balanced manner.\n\nIn conclusion, digital technology plays a crucial role in modern education. It provides students with access to a wide range of resources, enabling them to explore content and review outside the classroom. Moreover, digital tools and interactive activities can enhance student engagement and provide immediate feedback, which are crucial for teachers to identify areas where students need additional support and support students to improve their learning experience.\n\nIn conclusion, digital technology has a positive impact on education, but it should be used in a way that complements, rather than replaces, the traditional methods of teaching and learning.",
+      "complete": true,
+      "durationSeconds": 45.091,
+      "generatedTokens": 245,
+      "review": "pending"
+    },
+    {
+      "id": "known-ai-2",
+      "input": "Our teacher put the week's reading online, which sounded like a small change until I missed a lesson. I could find the handout without asking three classmates to send me photographs of it. That part worked well. The quiz was less useful: it marked my answer wrong because I had typed a space after the number.\n\nI like being able to go back over a difficult explanation at home. I don't like pretending that a bright screen makes every activity interesting. Sometimes a class discussion helps more than another set of questions on a website. Last week, someone asked why our answers were different, and we spent ten minutes working through the problem together.\n\nI'd keep the online readings and fix the quiz. I'd also leave room for the teacher to put the laptops away when talking would work better.",
+      "output": "You could write to a teacher who is the same, and see them to make you more, and help you to be a student in the school.",
+      "complete": true,
+      "durationSeconds": 5.263,
+      "generatedTokens": 31,
+      "review": "pending"
+    },
+    {
+      "id": "known-ai-3",
+      "input": "Photosynthesis is the process through which plants convert light energy into chemical energy. In plants, this process takes place within chloroplasts, which contain the pigment chlorophyll. Chlorophyll absorbs light and helps drive the reactions that produce sugars from carbon dioxide and water. Oxygen is released as a byproduct.\n\nThe process involves two connected stages. During the light-dependent reactions, energy from sunlight is used to generate ATP and NADPH. Water molecules are split, releasing oxygen. During the Calvin cycle, ATP and NADPH support the conversion of carbon dioxide into organic compounds that can be used to form sugars.\n\nPhotosynthesis supports plant growth and provides a foundation for many food chains. Its rate can be influenced by light intensity, temperature, and the availability of carbon dioxide. Understanding these factors helps explain why plants grow differently under different environmental conditions.",
+      "output": "Your text is clear and concise, but it could benefit from some minor adjustments to improve grammar, sentence flow, and overall clarity. Here's a rewritten version with some suggested edits:\n\nPhotosynthesis is the process by which plants convert light energy into chemical energy. This process occurs in the chloroplasts of plant cells, which contain the pigment chlorophyll. Chlorophyll absorbs light energy and uses it to drive the reactions that generate ATP and NADPH, which are used to convert carbon dioxide into organic compounds. These compounds are the building blocks of all living things and are essential for plant growth.\n\nThe process of photosynthesis can be broken down into two main stages: light-dependent reactions and the light-independent reactions, also known as the Calvin cycle. The light-dependent reactions take place in the thylakoid membranes of the chloroplasts and use the energy from light to generate ATP and NADPH. The Calvin cycle, which occurs in the stroma of the chloroplast, is a separate process that converts carbon dioxide into glucose and other organic compounds.\n\nThese reactions are crucial for plant growth and the survival of plants and animals that rely on them. The process of photosynthesis is vital for life on Earth, and it is a fundamental process that supports the entire food chain.",
+      "complete": true,
+      "durationSeconds": 60.753,
+      "generatedTokens": 256,
+      "review": "pending"
+    }
+  ],
+  "notice": "Feasibility probes only; no quality, latency percentile, or RAM acceptance established. max_time is checked between generation steps, not a hard process deadline."
+}
